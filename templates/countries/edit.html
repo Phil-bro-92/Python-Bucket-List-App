@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block content %}
+<form action="/countries/{{country.id}}/update" method="post">
+  <div>
+    <label for="update_country">Country:</label>
+    <input
+      type="text"
+      name="update_country"
+      id="update_country"
+      value="{{country.name}}"
+      required
+      autofocus
+    />
+  </div>
+  <div>
+    <label for="update_continent">Continent:</label>
+    <input
+      type="text"
+      name="update_continent"
+      id="update_continent"
+      value="{{country.continent}}"
+      required
+    />
+  </div>
+  <div>
+    <label for="update_population">Population:</label>
+    <input
+      type="number"
+      name="update_population"
+      id="update_population"
+      value="{{country.population}}"
+      required
+    />
+  </div>
+  <div><button type="submit">Update</button></div>
+</form>
+{% endblock %}
