@@ -1,0 +1,51 @@
+.first-color { 
+	background: #e7eaf6; 
+}
+	
+.second-color { 
+	background: #a2a8d3; 
+}
+
+.third-color { 
+	background: #38598b; 
+}
+
+.fourth-color { 
+	background: #113f67; 
+}
+
+header >a > h1 {
+    text-align: center;
+}
+
+header > a {
+    text-decoration: none;
+    color: black
+}
+header > ul {
+   padding: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+header > ul > a > li {
+    list-style-type: none;
+    background-color: rgb(185, 96, 96);
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+header > ul > a {
+    text-decoration: none;
+    color: white;
+}
+
+#homepage-img {
+    width: 100%
+}
+
+footer > h3 {
+    text-align: center;
+}
