@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<form action="/countries/new"><button type="submit" class="add-btn"><i class="fa-solid fa-plus"></i></button></form>
+<form action="/countries/new"><button type="submit" class="add-btn"><i class="fa-solid fa-plus fa-lg"></i></button></form>
 <table>
   <thead>
     <tr>
@@ -19,12 +19,12 @@
       <td>{{"{:,}".format(country.population)}}</td>
       <td>
         <form action="/countries/{{country.id}}/edit" method="post"
-          ><button type="submit" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button
+          ><button type="submit" class="edit-btn"><i class="fa-solid fa-pen-to-square fa-lg"></i></button
         ></form>
       </td>
       <td>
         <form action="/countries/{{country.id}}/delete" method="post">
-          <button type="submit" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+          <button type="submit" class="delete-btn"><i class="fa-solid fa-trash fa-lg"></i></button>
         </form>
       </td>
     </tr>

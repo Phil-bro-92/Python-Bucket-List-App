@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 <h1 class="header-name">{{city.name}}</h1>
 <form action="/sights/{{city.id}}/new">
-  <button type="submit" class="add-btn"><i class="fa-solid fa-plus"></i></button>
+  <button type="submit" class="add-btn"><i class="fa-solid fa-plus fa-lg"></i></button>
 </form>
 
 <table>
@@ -20,14 +20,14 @@
       <td>
         <form action="/sights/{{city.id}}/{{sight.id}}/edit" method="post">
           <button type="submit" class="edit-btn">
-            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-pen-to-square fa-lg"></i>
           </button>
         </form>
       </td>
       <td>
         <form action="/sights/{{city.id}}/{{sight.id}}delete" method="post">
           <button type="submit" class="delete-btn">
-            <i class="fa-solid fa-trash"></i>
+            <i class="fa-solid fa-trash fa-lg"></i>
           </button>
         </form>
       </td>

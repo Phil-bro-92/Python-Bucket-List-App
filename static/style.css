@@ -32,6 +32,17 @@ header > a {
 
 .nav > form > button {
   width: 130px;
+  background-image: linear-gradient(to right, #9cdbc4, rgb(215, 215, 136));
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.nav > form > button:hover {
+  background-image: linear-gradient(to left, #9cdbc4, rgb(215, 215, 136));
+
 }
 
 #homepage-img {
@@ -41,6 +52,9 @@ header > a {
   display: flex;
   justify-self: unset;
   border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 footer {
@@ -82,7 +96,7 @@ table tr:nth-child(even) {
 }
 
 table tr:hover {
-  background-color: rgb(229, 239, 232);
+  background-image: linear-gradient(to left, #9cdbc4, rgb(215, 215, 136));
   cursor: pointer;
 }
 
@@ -90,7 +104,7 @@ table th {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: left;
-  background-color: #30b786;
+  background-color: #669d88;
   color: white;
 }
 
@@ -130,16 +144,19 @@ button:hover {
   color: white;
   background-color: rgb(79, 147, 214);
   top: 0px;
-  width: 50px;
+  width: 55px;
   border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .add-btn:hover {
-  background-color: rgb(0, 98, 255);
+  background-color: rgb(58, 123, 226);
 }
 .edit-btn {
   color: white;
-  background-color: rgb(239, 188, 85);
+  background-color: rgb(237, 194, 107);
 }
 .edit-btn:hover {
   background-color: rgb(216, 140, 0);
@@ -147,7 +164,7 @@ button:hover {
 
 .delete-btn {
   color: rgb(255, 255, 255);
-  background-color: rgb(113, 108, 108);
+  background-color: rgb(167, 95, 95);
 }
 
 .delete-btn:hover {
