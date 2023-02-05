@@ -16,7 +16,7 @@
     <tr onclick="window.location='/cities/{{country.id}}'">
       <td>{{country.name}}</td>
       <td>{{country.continent}}</td>
-      <td>{{country.population}}</td>
+      <td>{{"{:,}".format(country.population)}}</td>
       <td>
         <form action="/countries/{{country.id}}/edit" method="post"
           ><button type="submit" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button

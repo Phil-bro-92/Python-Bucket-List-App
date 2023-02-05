@@ -19,17 +19,21 @@
   </head>
   <body>
     <header>
-      <a href="/"><h1>Away Ye G<i class="fa-solid fa-earth-europe fa-sm"></i></h1></a>
+      <a href="/"
+        ><h1>Away Ye G<i class="fa-solid fa-earth-europe fa-sm"></i></h1
+      ></a>
       <div class="nav">
         <form action="/users"><button>Users</button></form>
         <form action="/countries"><button>Countries</button></form>
-        <form action="/visits"><button>Bucket List</button>
-        </form>
+        <form action="/visits"><button>Bucket List</button></form>
       </div>
     </header>
-    <hr>
+    <hr />
     {% block content %} {% endblock %}
-    <hr>
-    <footer><h3>Away Ye Go &copy; 2022</h3></footer>
+    <hr />
+    <footer>
+      <h3 id="footer-logo">Away Ye Go &copy; 2022</h3>
+      <h6>Phil M. Broadley</h6>
+    </footer>
   </body>
 </html>
