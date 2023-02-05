@@ -2,6 +2,7 @@ from flask import render_template, request, redirect, Blueprint
 import repositories.city_repository as city_repository
 import repositories.country_repository as country_repository
 from models.city import City
+from models.country import Country
 import pdb
 
 
@@ -29,3 +30,18 @@ def create_city(id):
     city = City(name, country)
     city_repository.save(city)
     return redirect("/cities/" + id)
+
+
+@cities_blueprint.route("/cities/<country_id>/<city_id>/edit")
+def edit_city(country_id, city_id):
+    city = city_repository.select(city_id)
+    country = country_repository.select(country_id)
+    return render_template("cities/edit.html", city=city, country=country)
+
+
+@cities_blueprint.route("/cities/<country_id>/<city_id>/delete", methods=["POST"])
+def delete(country_id, city_id):
+    city_repository.delete(city_id)
+    return redirect("/cities/" + country_id)
+
+

@@ -1,11 +1,11 @@
 {% extends "base.html" %} {% block content %}
-<form action="/users/new"><button type="submit">Add User</button></form>
+<form action="/users/new"><button type="submit" class="add-btn"><i class="fa-solid fa-user fa-2x"></i></button></form>
 <table>
   <thead>
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
-      <th>edit</th>
+      <th>Edit</th>
       <th>Delete</th>
     </tr>
   </thead>
@@ -16,12 +16,12 @@
       <td>{{user.last_name}}</td>
       <td>
         <form action="/users/{{user.id}}/edit" method="post"
-          ><button type="submit"><i class="fa-solid fa-pen-to-square"></i></button
+          ><button type="submit" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button
         ></form>
       </td>
-      <td>
+      <td class="button-cell">
         <form action="/users/{{user.id}}/delete" method="post">
-          <button type="submit"><i class="fa-solid fa-trash"></i></button>
+          <button type="submit" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
         </form>
       </td>
     </tr>

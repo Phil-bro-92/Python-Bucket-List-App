@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+<form action="/visits" method="post">
+  <div>
+    <label for="user">User:</label>
+    <select name="user" id="user_visit">
+      {% for user in users %}
+      <option value="{{user.id}}">
+        {{user.first_name}} {{user.last_name}}
+      </option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label for="city">City:</label>
+    <select name="city" id="city_visit">
+      {% for city in cities %}
+      <option value="{{city.id}}">
+        {{city.name}}
+      </option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <button type="submit"><i class="fa-solid fa-plus"></i></button>
+  </div>
+</form>
+{% endblock %}

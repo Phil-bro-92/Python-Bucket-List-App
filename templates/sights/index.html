@@ -1,31 +1,31 @@
 {% extends "base.html" %} {% block content %}
-<h1 class="header-name">{{country.name}}</h1>
-<form action="/cities/{{country.id}}/new">
-  <button type="submit" class="add-btn"><i class="fa-solid fa-city fa-2x"></i></button>
+<h1 class="header-name">{{city.name}}</h1>
+<form action="/sights/{{city.id}}/new">
+  <button type="submit" class="add-btn"><i class="fa-solid fa-landmark fa-2x"></i></button>
 </form>
 
 <table>
   <thead>
     <tr>
-      <th>City</th>
+      <th>Sight / Attraction</th>
       <th>Edit</th>
       <th>Delete</th>
     </tr>
   </thead>
   <tbody>
-    {% for city in cities %}
+    {% for sight in sights %}
 
-    <tr onclick="window.location='/sights/{{city.id}}'">
-      <td>{{city.name}}</td>
+    <tr >
+      <td>>{{sight.name}}</a></td>
       <td>
-        <form action="/cities/{{country.id}}/{{city.id}}/edit">
+        <form action="/sights/{{city.id}}/{{sight.id}}/edit">
           <button type="submit" class="edit-btn">
             <i class="fa-solid fa-pen-to-square"></i>
           </button>
         </form>
       </td>
       <td>
-        <form action="/cities/{{country.id}}/{{city.id}}/delete" method="post">
+        <form action="/sights/{{city.id}}/{{sight.id}}delete" method="post">
           <button type="submit" class="delete-btn">
             <i class="fa-solid fa-trash"></i>
           </button>

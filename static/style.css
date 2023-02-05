@@ -1,51 +1,135 @@
-.first-color { 
-	background: #e7eaf6; 
-}
-	
-.second-color { 
-	background: #a2a8d3; 
-}
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
 
-.third-color { 
-	background: #38598b; 
+* {
+  font-family: "Unbounded", cursive;
 }
-
-.fourth-color { 
-	background: #113f67; 
-}
-
-header >a > h1 {
-    text-align: center;
+header > a > h1 {
+  text-align: center;
+  font-family: "Unbounded", cursive;
 }
 
 header > a {
-    text-decoration: none;
-    color: black
-}
-header > ul {
-   padding: 0;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 15px;
+  text-decoration: none;
+  color: black;
 }
 
-header > ul > a > li {
-    list-style-type: none;
-    background-color: rgb(185, 96, 96);
-    padding: 10px;
-    font-size: 24px;
-    border-radius: 20px;
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  height: 50px;
+  margin-bottom: 12px;
+  background-color: white;
 }
 
-header > ul > a {
-    text-decoration: none;
-    color: white;
+.nav > form > button {
+  width: 130px;
 }
 
 #homepage-img {
-    width: 100%
+  width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a1dec8;
+    height: 100px
 }
 
 footer > h3 {
-    text-align: center;
+  text-align: center;
+}
+
+.header-name {
+  text-align: center;
+}
+
+table {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: rgb(229, 239, 232);
+  cursor: pointer;
+}
+
+table th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #30b786;
+  color: white;
+}
+
+form > h2 {
+  text-align: center;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  box-shadow: inset;
+  border: 1px solid rgb(225, 217, 217);
+  color: rgb(255, 255, 255);
+  background-color: #30b786;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-cell {
+  max-width: 100px;
+}
+.add-btn {
+  position: absolute;
+  background-color: rgb(0, 128, 255);
+  top: 0px;
+  width: 70px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.edit-btn {
+  background-color: orange;
+}
+.edit-btn:hover {
+  background-color: rgb(216, 140, 0);
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.delete-btn:hover {
+  background-color: rgb(186, 5, 5);
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }

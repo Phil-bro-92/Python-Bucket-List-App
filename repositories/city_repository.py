@@ -14,7 +14,7 @@ def save(city):
 
 def select_all():
     cities = []
-    sql = "SELECT * FROM cities"
+    sql = "SELECT * FROM cities ORDER BY name"
     results = run_sql(sql)
 
     for result in results:
@@ -51,3 +51,14 @@ def update(city):
     sql = "UPDATE cities SET (name, country_id) = (%s, %s) WHERE id = %s"
     values = [city.name, city.country.id, city.id]
     run_sql(sql, values)
+
+def sights(city):
+    sights = []
+    sql = "SELECT sights.name, sights.id FROM sights INNER JOIN cities ON cities.id = sights.city_id WHERE cities.id = %s"
+    values = [city.id]
+    results = run_sql(sql, values)
+
+    for result in results:
+        sights.append(result)
+    return sights
+    

@@ -15,16 +15,19 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
     />
-    <title>Away Ye G&#127760;</title>
+    <title>Away Ye G&#127758;</title>
   </head>
   <body>
     <header>
-      <a href="/"><h1>Away Ye G&#127760;</h1></a>
-      <ul>
-        <a href="/users"><li>Users</li></a>
-        <a href="/countries"><li>Countries</li></a>
-      </ul>
+      <a href="/"><h1>Away Ye G&#127758;</h1></a>
+      <div class="nav">
+        <form action="/users"><button>Users</button></form>
+        <form action="/countries"><button>Countries</button></form>
+        <form action="/visits"><button>Bucket List</button>
+        </form>
+      </div>
     </header>
+    <hr>
     {% block content %} {% endblock %}
     <footer><h3>Away Ye Go &copy;</h3></footer>
   </body>
