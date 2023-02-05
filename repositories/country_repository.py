@@ -1,6 +1,7 @@
 from db.run_sql import run_sql
-
+import pdb
 from models.country import Country
+from models.city import City
 
 
 def save(country):
@@ -54,5 +55,13 @@ def update(country):
     run_sql(sql, values)
 
 
+def cities(country):
+    cities = []
+    sql = "SELECT cities.name FROM countries INNER JOIN cities ON countries.id = cities.country_id WHERE countries.id = %s"
+    values = [country.id]
+    results = run_sql(sql, values)
 
 
+    for result in results:
+        cities.append(result)
+    return cities

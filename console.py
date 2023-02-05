@@ -34,11 +34,26 @@ country_repository.save(country1)
 country2 = Country("Japan", "Asia", 126000000)
 country_repository.save(country2)
 
+country3 = Country("France", "Europe", 78000000)
+country_repository.save(country3)
+
 city1 = City("Tokyo", country2)
 city_repository.save(city1)
 
 city2 = City("Berlin", country1)
 city_repository.save(city2)
+
+city3 = City("Munich", country1)
+city_repository.save(city3)
+
+city4 = City("Paris", country3)
+city_repository.save(city4)
+
+city5 = City("Kyoto", country2)
+city_repository.save(city5)
+
+city6 = City("Nice", country3)
+city_repository.save(city6)
 
 sight1 = Sight("Tsukji Market", city1)
 sight_repository.save(sight1)

@@ -14,7 +14,7 @@
   <tbody>
     {% for country in countries %}
     <tr>
-      <td><a href="/cities">{{country.name}}</a></td>
+      <td><a href="/cities/{{country.id}}">{{country.name}}</a></td>
       <td>{{country.continent}}</td>
       <td>{{country.population}}</td>
       <td>
