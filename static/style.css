@@ -7,11 +7,14 @@
 header > a > h1 {
   text-align: center;
   font-family: "Unbounded", cursive;
-  background-color: #9cdbc4;
+  background-image: linear-gradient(to right, #9cdbc4, rgb(215, 215, 136));
   margin-left: 100px;
   margin-right: 100px;
   padding: 15px;
   border-radius: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 header > a {
@@ -45,7 +48,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #a1dec8;
+  background-color: rgb(85, 83, 83);
+  color: white;
   height: 100px;
 }
 
@@ -71,7 +75,7 @@ table th {
 }
 
 table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #efebeb;
 }
 
 table tr:hover {
@@ -96,7 +100,7 @@ select {
   width: 100%;
   padding: 12px 20px;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -105,25 +109,30 @@ button {
   width: 100%;
   box-shadow: inset;
   border: 1px solid rgb(225, 217, 217);
-  color: rgb(89, 80, 80);
-  background-color: #2cdb9b;
+  color: white;
+  background-color: #30b786;
   padding: 14px 20px;
   margin: 8px 0;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.button-cell {
-  max-width: 100px;
+button:hover {
+  background-color: #149a69;
 }
 .add-btn {
   position: absolute;
   color: white;
-  background-color: rgb(0, 128, 255);
+  background-color: rgb(50, 149, 248);
   top: 0px;
   width: 50px;
+  border-radius: 10px;
+}
 
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.add-btn:hover {
+  background-color: rgb(0, 98, 255);
 }
 .edit-btn {
   color: white;
