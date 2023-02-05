@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% block content %}
-<form action="/cities/{{country.id}}" method="post">
-    <h2>Add a City to {{country.name}}</h2>
+<form action="/sights/{{city.id}}" method="post">
+  <h2>Add a Sight / Attraction to {{city.name}}</h2>
   <div>
     <input
       type="text"
-      name="city"
-      id="city"
-      placeholder="City"
+      name="sight"
+      id="sight"
+      placeholder="Enter Sight / Attraction"
       required
       autofocus
     />

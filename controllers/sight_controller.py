@@ -12,3 +12,15 @@ def sights(id):
     city = city_repository.select(id)
     sights = city_repository.sights(city)
     return render_template("sights/index.html", city=city, sights=sights)
+
+@sights_blueprint.route("/sights/<id>/new")
+def new_sight(id):
+    city = city_repository.select(id)
+    return render_template("sights/new.html", city=city)
+
+@sights_blueprint.route("/sights/<id>", methods=["POST"])
+def create_sight(id):
+    name = request.form["sight"]
+    sight = Sight(name, id)
+    sight_repository.save(sight)
+    return redirect("/sights/" + id)
