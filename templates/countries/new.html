@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 <form action="/countries" method="post">
-  <h2>Add Country</h2>
+  <h2>Add a Country</h2>
   <div>
     <label for="country">Country:</label>
     <input
@@ -24,6 +24,7 @@
     <label for="population">population:</label>
     <input
       type="number"
+      min="0"
       name="population"
       id="population"
       placeholder="Enter Population"
