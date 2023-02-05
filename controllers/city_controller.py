@@ -3,7 +3,6 @@ import repositories.city_repository as city_repository
 import repositories.country_repository as country_repository
 from models.city import City
 from models.country import Country
-import pdb
 
 
 cities_blueprint = Blueprint("cities", __name__)
@@ -25,7 +24,6 @@ def new_city(id):
 @cities_blueprint.route("/cities/<id>", methods=["POST"])
 def create_city(id):
     country = country_repository.select(id)
-    # pdb.set_trace()
     name = request.form["city"]
     city = City(name, country)
     city_repository.save(city)

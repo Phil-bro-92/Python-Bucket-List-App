@@ -3,9 +3,15 @@
 * {
   font-family: "Unbounded", cursive;
 }
+
 header > a > h1 {
   text-align: center;
   font-family: "Unbounded", cursive;
+  background-color: #9cdbc4;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 15px;
+  border-radius: 100px;
 }
 
 header > a {
@@ -31,11 +37,11 @@ header > a {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #a1dec8;
-    height: 100px
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a1dec8;
+  height: 100px;
 }
 
 footer > h3 {
@@ -94,8 +100,8 @@ button {
   width: 100%;
   box-shadow: inset;
   border: 1px solid rgb(225, 217, 217);
-  color: rgb(255, 255, 255);
-  background-color: #30b786;
+  color: rgb(89, 80, 80);
+  background-color: #2cdb9b;
   padding: 14px 20px;
   margin: 8px 0;
   border-radius: 4px;
@@ -107,13 +113,15 @@ button {
 }
 .add-btn {
   position: absolute;
+  color: white;
   background-color: rgb(0, 128, 255);
   top: 0px;
-  width: 70px;
-  border-radius: 20px;
+  width: 50px;
+
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .edit-btn {
+  color: white;
   background-color: orange;
 }
 .edit-btn:hover {
@@ -121,6 +129,7 @@ button {
 }
 
 .delete-btn {
+  color: white;
   background-color: red;
 }
 
