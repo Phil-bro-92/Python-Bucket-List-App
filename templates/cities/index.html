@@ -1,29 +1,23 @@
 {% extends "base.html" %} {% block content %}
-<form action="/cities/new"><button type="submit">Add City</button></form>
+<form action="/cities/{{country.id}}/new"><button type="submit">Add City</button></form>
 <h1>{{country.name}}</h1>
 <table>
   <thead>
     <tr>
       <th>City</th>
       <th>Edit</th>
-      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
     {% for city in cities %}
 
     <tr>
-      <td>{{city.name}}</td>
+      <td><a href="/">{{city.name}}</a></td>
       <td>
         <form action="/" method="post">
           <button type="submit">
             <i class="fa-solid fa-pen-to-square"></i>
           </button>
-        </form>
-      </td>
-      <td>
-        <form action="/" method="post">
-          <button type="submit"><i class="fa-solid fa-trash"></i></button>
         </form>
       </td>
     </tr>

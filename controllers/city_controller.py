@@ -12,5 +12,20 @@ cities_blueprint = Blueprint("cities", __name__)
 def cities(id):
     country = country_repository.select(id)
     cities = country_repository.cities(country)
-    # pdb.set_trace()
     return render_template("cities/index.html", cities=cities, country=country)
+
+
+@cities_blueprint.route("/cities/<id>/new")
+def new_city(id):
+    country = country_repository.select(id)
+    return render_template("cities/new.html", country=country)
+
+
+@cities_blueprint.route("/cities/<id>", methods=["POST"])
+def create_city(id):
+    country = country_repository.select(id)
+    # pdb.set_trace()
+    name = request.form["city"]
+    city = City(name, country)
+    city_repository.save(city)
+    return redirect("/cities/" + id)
