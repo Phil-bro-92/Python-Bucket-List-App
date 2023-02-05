@@ -1,7 +1,7 @@
 from flask import render_template, request, redirect, Blueprint
 import repositories.sight_repository as sight_repository
 import repositories.city_repository as city_repository
-
+import pdb
 from models.sight import Sight
 
 sights_blueprint = Blueprint("sights", __name__)

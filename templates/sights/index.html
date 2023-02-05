@@ -16,9 +16,9 @@
     {% for sight in sights %}
 
     <tr >
-      <td>>{{sight.name}}</a></td>
+      <td>{{sight.name}}</a></td>
       <td>
-        <form action="/sights/{{city.id}}/{{sight.id}}/edit">
+        <form action="/sights/{{city.id}}/{{sight.id}}/edit" method="post">
           <button type="submit" class="edit-btn">
             <i class="fa-solid fa-pen-to-square"></i>
           </button>

@@ -1,5 +1,5 @@
 from db.run_sql import run_sql
-
+import pdb
 from models.city import City
 import repositories.country_repository as country_repository
 
@@ -28,12 +28,15 @@ def select(id):
     city = None
     sql = "SELECT * FROM cities WHERE id = %s"
     values = [id]
-    result = run_sql(sql, values)
-
+    result = run_sql(sql, values)[0]
+    # pdb.set_trace()
     if result:
+       
         country = country_repository.select(result['country_id'])
+        
         city = City(result["name"], country, result["id"])
     return city
+    
 
 
 def delete_all():

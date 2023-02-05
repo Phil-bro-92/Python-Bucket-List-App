@@ -61,6 +61,12 @@ sight_repository.save(sight1)
 sight2 = Sight("BrandenBurg Gate", city2)
 sight_repository.save(sight2)
 
+sight3 = Sight("Beer Festival", city3)
+sight_repository.save(sight3)
+
+sight4 = Sight("Alexander Platz", city2)
+sight_repository.save(sight4)
+
 visit1 = Visit(user1, city1, True, True)
 visit_repository.save(visit1)
 
