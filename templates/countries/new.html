@@ -1,37 +1,36 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <form action="/countries" method="post">
-    <div>
-      <label for="country">Country:</label>
-      <input
-        type="text"
-        name="country"
-        id="country"
-        placeholder="Country"
-        required
-        autofocus
-      />
-    </div>
-    <div>
-      <label for="continent">Continent:</label>
-      <input
-        type="text"
-        name="continent"
-        id="continent"
-        placeholder="Continent"
-        required
-      />
-    </div>
-    <div>
-        <label for="population">population:</label>
-        <input
-          type="number"
-          name="population"
-          id="population"
-          placeholder="Population"
-          required
-        />
-      </div>
-    <div><button type="submit"><i class="fa-solid fa-plus"></i></button></div>
-  </form>
+  <div>
+    <label for="country">Country:</label>
+    <input
+      type="text"
+      name="country"
+      id="country"
+      placeholder="Country"
+      required
+      autofocus
+    />
+  </div>
+  <div>
+    <label for="continent">Continent:</label>
+    <select name="continent" id="continent" required>
+        {% for continent in continents %}
+        <option value="{{continent}}">{{continent}}</option>
+        {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label for="population">population:</label>
+    <input
+      type="number"
+      name="population"
+      id="population"
+      placeholder="Population"
+      required
+    />
+  </div>
+  <div>
+    <button type="submit"><i class="fa-solid fa-plus"></i></button>
+  </div>
+</form>
 {% endblock %}

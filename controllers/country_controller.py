@@ -19,7 +19,9 @@ def delete(id):
 
 @countries_blueprint.route("/countries/new")
 def new_country():
-    return render_template("countries/new.html")
+    continents = ["Africa", "Asia", "Europe", "Oceania", "North America",
+    "South America"]
+    return render_template("countries/new.html", continents = continents)
 
 
 @countries_blueprint.route("/countries", methods=["POST"])
