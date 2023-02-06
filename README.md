@@ -2,6 +2,19 @@
 
 ## A BUCKET LIST TRAVEL APPLICATION
 
+## Running Instructions
+
+Requires Flask
+
+In root terminal:
+
+createdb bucket_list
+
+psql - d bucket_list -f db/bucket_list.sql
+
+flask run
+
+
 ## Languages 
 
 1. Python with Flask / Jinja
