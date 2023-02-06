@@ -40,3 +40,12 @@ def edit_sight(city_id, sight_id):
     city = city_repository.select(city_id)
     sight = sight_repository.select(sight_id)
     return render_template("sights/edit.html", sight=sight, city=city)
+
+
+@sights_blueprint.route("/sights/<city_id>/<sight_id>/update", methods=["POST"])
+def update_sight(city_id, sight_id):
+    sight = request.form["update_sight"]
+    city = city_repository.select(city_id)
+    updated_sight = Sight(sight, city, sight_id)
+    sight_repository.update(updated_sight)
+    return redirect("/sights/" + city_id)
