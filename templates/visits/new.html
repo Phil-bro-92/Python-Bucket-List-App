@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 
-<form action="/visits" method="post">
+<form action="/visits/{{user.id}}/new" method="post">
   <h2>Add a destination, {{user.first_name}}</h2>
   <div>
     <label for="user">User:</label>
@@ -23,8 +23,8 @@
     <label for="visited">Been Before?</label>
     <select name="visited" id="visited">
       <option disabled selected>Please select</option>
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
+      <option value="True">Yes</option>
+      <option value="False">No</option>
     </select>
   </div>
   <div>

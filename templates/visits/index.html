@@ -4,7 +4,11 @@
     <i class="fa-solid fa-plus"></i>
   </button>
 </form>
-<h2 class="bucket-list-header">{{user.first_name}} {{user.last_name}}'s Bucket List</h2>
+
+{% if visits|length > 0 %}
+<h2 class="bucket-list-header">
+  {{user.first_name}} {{user.last_name}}'s Bucket List
+</h2>
 <table>
   <thead>
     <tr>
@@ -14,10 +18,14 @@
     </tr>
   </thead>
   <tbody>
-    {% for user in users %}
-    <tr onclick="window.location='/cities/{{city.id}}'">
-      <td>{{city.name}}</td>
+    {% for visit in visits %}
+    <tr onclick="window.location='/sights/{{visit.city_id}}'">
+      <td>{{visit.city_name}}</td>
+      {% if visit.visited == True %}
       <td>Yes</td>
+      {% else %}
+      <td>No</td>
+      {% endif %}
       <td>
         <form action="/visits/{{user.id}}/delete" method="post">
           <button type="submit" class="delete-btn">
@@ -29,4 +37,7 @@
     {% endfor %}
   </tbody>
 </table>
-{% endblock %}
+{% else %}
+<h2>You have no Bucket List entries, {{user.first_name}}.</h2>
+<h3>Add something!</h3>
+{% endif %} {% endblock %}

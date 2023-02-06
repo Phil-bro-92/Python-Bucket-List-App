@@ -1,5 +1,5 @@
 from db.run_sql import run_sql
-
+import pdb
 from models.visit import Visit
 import repositories.user_repository as user_repository
 import repositories.city_repository as city_repository
@@ -55,5 +55,13 @@ def update(visit):
     values = [visit.user.id, visit.city.id, visit.visited, visit.on_list, visit.id]
     run_sql(sql, values)
 
+
 def visits(user):
-    sql = "SELECT * FROM users"
+    visits = []
+    sql = "SELECT u.id user_id, u.first_name, u.last_name, v.visited, v.on_list, c.id city_id, c.name city_name FROM visits AS v INNER JOIN users AS u ON u.id = v.user_id INNER JOIN cities AS c ON c.id = v.city_id WHERE u.id = %s"
+    values = [user.id]
+    results = run_sql(sql, values)
+    # pdb.set_trace()
+    for result in results:
+        visits.append(result)
+    return visits

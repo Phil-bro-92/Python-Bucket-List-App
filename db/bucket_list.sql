@@ -231,3 +231,6 @@ INSERT INTO users (first_name, last_name) VALUES ('Mark', 'Corrigan');
 INSERT INTO users (first_name, last_name) VALUES ('Jeremy', 'Usbourne');
 INSERT INTO users (first_name, last_name) VALUES ('Henry', 'Hill');
 INSERT INTO users (first_name, last_name) VALUES ('Jack', 'Sparrow');
+
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (1, 1, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (1, 2, True, True);
