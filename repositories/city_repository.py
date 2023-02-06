@@ -3,6 +3,15 @@ import pdb
 from models.city import City
 import repositories.country_repository as country_repository
 
+## PDA PSEUDOCODE FOR SAVE A CITY TO DATABASE
+
+# Define save city function:
+#   Create sql variable and assign sgl string inserting name and country_id in cities and returning all.
+#   Create values variable and assign id of city argument.
+#   Creating results variable and assign run_sql with sql and values as arguments
+#   Create city id variable and assign to first index of results' id
+#   Return city
+
 
 def save(city):
     sql = "INSERT INTO cities (name, country_id) VALUES (%s, %s) RETURNING *"

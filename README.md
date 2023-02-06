@@ -2,14 +2,14 @@
 
 ## A BUCKET LIST TRAVEL APPLICATION
 
-### Languages 
+## Languages 
 
 1. Python with Flask / Jinja
 2. Postgres with Psycopg
 3. HTML
 4. CSS
 
-### Brief
+## Brief
 
 The application allows users to view countries / cities / sights, add and update them and add  city destinations to their bucket list. Users can also save destinations they have visited to their page.
 
@@ -17,7 +17,13 @@ The application allows users to view countries / cities / sights, add and update
 
 ![Alt text](PDA/site_map.png?raw=true "Optional Title")
 
+## Wireframe Diagrams
+
+![Alt text](PDA/wireframe_diagrams.png?raw=true "Optional Title")
+
 ## Use Case Diagram (Country Feature)
 
 ![Alt text](PDA/use_case.png?raw=true "Optional Title")
+
+
 
