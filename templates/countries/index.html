@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <form action="/countries/new"><button type="submit" class="add-btn"><i class="fa-solid fa-plus fa-lg"></i></button></form>
+{%if countries|length > 0 %}
 <table>
   <thead>
     <tr>
@@ -31,4 +32,9 @@
     {% endfor %}
   </tbody>
 </table>
+{% else %}
+<div class="no-entries">
+  <h2>No country entries.</h2>
+</div>
+{% endif %}
 {% endblock %}

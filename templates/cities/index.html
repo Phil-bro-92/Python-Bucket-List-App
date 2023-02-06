@@ -1,9 +1,10 @@
 {% extends "base.html" %} {% block content %}
-<h1 class="header-name">{{country.name}}</h1>
+
 <form action="/cities/{{country.id}}/new">
   <button type="submit" class="add-btn"><i class="fa-solid fa-plus fa-lg"></i></button>
 </form>
-
+{% if cities|length > 0 %}
+<h1 class="header-name">{{country.name}}</h1>
 <table>
   <thead>
     <tr>
@@ -36,4 +37,10 @@
     {% endfor %}
   </tbody>
 </table>
+{% else %}
+<div class="no-entries">
+  <h2>{{country.name}} has no city entries.</h2>
+</div>
+{% endif %}
+
 {% endblock %}
