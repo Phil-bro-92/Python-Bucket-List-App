@@ -13,4 +13,4 @@
 
 The application allows users to view countries / cities / sights, add and update them and add  city destinations to their bucket list. Users can also save destinations they have visited to their page.
 
-![Alt text](/use_case.png?raw=true "Optional Title")
+![Alt text](PDA/use_case.png?raw=true "Optional Title")
