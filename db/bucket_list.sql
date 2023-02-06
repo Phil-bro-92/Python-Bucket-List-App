@@ -176,13 +176,43 @@ INSERT INTO cities (name, country_id) VALUES ('Lagos', 7);
 INSERT INTO cities (name, country_id) VALUES ('Kano', 7);
 INSERT INTO cities (name, country_id) VALUES ('Ibadan', 7);
 
+INSERT INTO sights (name, city_id) VALUES ('Punta de la Piedad', 19);
+INSERT INTO sights (name, city_id) VALUES ('Praia de Camilo', 19);
+INSERT INTO sights (name, city_id) VALUES ('Marina de Lagos', 19);
+INSERT INTO sights (name, city_id) VALUES ('Gidan Makama Museum', 20);
+INSERT INTO sights (name, city_id) VALUES ('Emirs Palace', 20);
+INSERT INTO sights (name, city_id) VALUES ('Kano Zoo', 20);
+INSERT INTO sights (name, city_id) VALUES ('Dache Foods', 21);
+INSERT INTO sights (name, city_id) VALUES ('Bowers Tower', 21);
+INSERT INTO sights (name, city_id) VALUES ('Topfat Art Gallery', 21);
+
 INSERT INTO cities (name, country_id) VALUES ('Dhaka', 8);
 INSERT INTO cities (name, country_id) VALUES ('Chattogram', 8);
 INSERT INTO cities (name, country_id) VALUES ('Khulna', 8);
 
+INSERT INTO sights (name, city_id) VALUES ('Ahsan Manzil Museum', 22);
+INSERT INTO sights (name, city_id) VALUES ('National Parliament', 22);
+INSERT INTO sights (name, city_id) VALUES ('Dhakeshwari Temple', 22);
+INSERT INTO sights (name, city_id) VALUES ('Chittagong Zoo', 23);
+INSERT INTO sights (name, city_id) VALUES ('Ethnological Museum', 23);
+INSERT INTO sights (name, city_id) VALUES ('War Cemetery', 23);
+INSERT INTO sights (name, city_id) VALUES ('Khan Jahan Ali Bridge', 24);
+INSERT INTO sights (name, city_id) VALUES ('Shahid Hadis Park', 24);
+INSERT INTO sights (name, city_id) VALUES ('Rupsha Railway Bridge', 24);
+
 INSERT INTO cities (name, country_id) VALUES ('Moscow', 9);
 INSERT INTO cities (name, country_id) VALUES ('Saint Petersburg', 9);
 INSERT INTO cities (name, country_id) VALUES ('Novosibirsk', 9);
+
+INSERT INTO sights (name, city_id) VALUES ('The Kremlin', 25);
+INSERT INTO sights (name, city_id) VALUES ('St. Basils Cathedral', 25);
+INSERT INTO sights (name, city_id) VALUES ('Gorky Park of Culture', 25);
+INSERT INTO sights (name, city_id) VALUES ('St. Isaacs Cathedral', 26);
+INSERT INTO sights (name, city_id) VALUES ('Savior on the Spilled Blood', 26);
+INSERT INTO sights (name, city_id) VALUES ('State Hermitage Museum', 26);
+INSERT INTO sights (name, city_id) VALUES ('Par Zoologique', 27);
+INSERT INTO sights (name, city_id) VALUES ('Academic Theater', 27);
+INSERT INTO sights (name, city_id) VALUES ('Akvamir', 27);
 
 INSERT INTO cities (name, country_id) VALUES ('Mexico City', 10);
 INSERT INTO cities (name, country_id) VALUES ('Guadalajara', 10);

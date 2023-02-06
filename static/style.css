@@ -31,7 +31,7 @@ header > a {
 }
 
 .nav > form > button {
-  width: 200px;
+  width: 230px;
   background-image: linear-gradient(to right, #9cdbc4, rgb(215, 215, 136));
   color: black;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -199,11 +199,11 @@ div {
 
 @media (min-width: 700px) {
   .nav > form > button {
-    width: 300px;
+    width: 330px;
   }
 }
 @media (min-width: 1000px) {
   .nav > form > button {
-    width: 500px;
+    width: 470px;
   }
 }
