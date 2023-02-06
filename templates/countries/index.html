@@ -6,7 +6,7 @@
     <tr>
       <th>Country</th>
       <th>Continent</th>
-      <th>Population</th>
+      <th class="hide-population">Population</th>
       <th>Edit</th>
       <th>Delete</th>
     </tr>
@@ -16,7 +16,7 @@
     <tr onclick="window.location='/cities/{{country.id}}'">
       <td>{{country.name}}</td>
       <td>{{country.continent}}</td>
-      <td>{{"{:,}".format(country.population)}}</td>
+      <td class="hide-population">{{"{:,}".format(country.population)}}</td>
       <td>
         <form action="/countries/{{country.id}}/edit" method="post"
           ><button type="submit" class="edit-btn"><i class="fa-solid fa-pen-to-square fa-lg"></i></button

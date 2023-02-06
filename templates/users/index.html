@@ -1,5 +1,10 @@
 {% extends "base.html" %} {% block content %}
-<form action="/users/new"><button type="submit" class="add-btn"><i class="fa-solid fa-plus"></i></button></form>
+<form action="/users/new">
+  <button type="submit" class="add-btn">
+    <i class="fa-solid fa-plus"></i>
+  </button>
+</form>
+{% if users|length > 0 %}
 <table>
   <thead>
     <tr>
@@ -15,17 +20,25 @@
       <td>{{user.first_name}}</td>
       <td>{{user.last_name}}</td>
       <td>
-        <form action="/users/{{user.id}}/edit" method="post"
-          ><button type="submit" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button
-        ></form>
+        <form action="/users/{{user.id}}/edit" method="post">
+          <button type="submit" class="edit-btn">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+        </form>
       </td>
       <td class="button-cell">
         <form action="/users/{{user.id}}/delete" method="post">
-          <button type="submit" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+          <button type="submit" class="delete-btn">
+            <i class="fa-solid fa-trash"></i>
+          </button>
         </form>
       </td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
-{% endblock %}
+{% else %}
+<div class="no-entries">
+  <h2>No user entries.</h2>
+</div>
+{% endif %} {% endblock %}

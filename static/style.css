@@ -23,7 +23,7 @@ header > a {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 5px;
   height: 50px;
   margin-bottom: 12px;
@@ -37,12 +37,12 @@ header > a {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .nav > form > button:hover {
   background-image: linear-gradient(to left, #9cdbc4, rgb(215, 215, 136));
-
 }
 
 #homepage-img {
@@ -69,6 +69,7 @@ footer {
 
 footer > h3 {
   text-align: center;
+  cursor: pointer;
 }
 
 #footer-logo {
@@ -179,4 +180,17 @@ div {
 
 .bucket-list-header {
   text-align: center;
+}
+
+.no-entries {
+  text-align: center;
+  line-height: 2em;
+}
+
+
+
+@media (max-width: 600px) {
+  .hide-population {
+    display: none;
+  }
 }

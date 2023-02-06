@@ -27,7 +27,10 @@
       <td>No</td>
       {% endif %}
       <td>
-        <form action="/visits/{{visit.visit_id}}/{{user.id}}/delete" method="post">
+        <form
+          action="/visits/{{visit.visit_id}}/{{user.id}}/delete"
+          method="post"
+        >
           <button type="submit" class="delete-btn">
             <i class="fa-solid fa-trash"></i>
           </button>
@@ -38,6 +41,7 @@
   </tbody>
 </table>
 {% else %}
-<h2>You have no Bucket List entries, {{user.first_name}}.</h2>
-<h3>Add something!</h3>
+<div class="no-entries">
+  <h2>You have no Bucket List entries, {{user.first_name}}.</h2>
+</div>
 {% endif %} {% endblock %}
