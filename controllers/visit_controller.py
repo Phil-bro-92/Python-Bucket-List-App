@@ -32,3 +32,9 @@ def create_bucket_list_entry(user_id):
     visit = Visit(user, city, visited, True)
     visit_repository.save(visit)
     return redirect("/visits/" + user_id)
+
+
+@visits_blueprint.route("/visits/<visit_id>/<user_id>/delete", methods=["POST"])
+def delete_visit(visit_id, user_id):
+    visit_repository.delete(visit_id)
+    return redirect("/visits/" + user_id)
