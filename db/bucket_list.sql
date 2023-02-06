@@ -120,17 +120,57 @@ INSERT INTO cities (name, country_id) VALUES ('New York', 3);
 INSERT INTO cities (name, country_id) VALUES ('Los Angeles', 3);
 INSERT INTO cities (name, country_id) VALUES ('Chicago', 3);
 
+INSERT INTO sights (name, city_id) VALUES ('Empire State Building', 7);
+INSERT INTO sights (name, city_id) VALUES ('Central Park', 7);
+INSERT INTO sights (name, city_id) VALUES ('Statue of Liberty', 7);
+INSERT INTO sights (name, city_id) VALUES ('Museum of Art', 8);
+INSERT INTO sights (name, city_id) VALUES ('The Getty', 8);
+INSERT INTO sights (name, city_id) VALUES ('Griffith Observatory', 8);
+INSERT INTO sights (name, city_id) VALUES ('Art Institute', 9);
+INSERT INTO sights (name, city_id) VALUES ('Navy Pier', 9);
+INSERT INTO sights (name, city_id) VALUES ('Millennium Park', 9);
+
 INSERT INTO cities (name, country_id) VALUES ('Jakarta', 4);
 INSERT INTO cities (name, country_id) VALUES ('Surabaya', 4);
 INSERT INTO cities (name, country_id) VALUES ('Bekasi', 4);
+
+INSERT INTO sights (name, city_id) VALUES ('Taman Mini', 10);
+INSERT INTO sights (name, city_id) VALUES ('Museum Nasional', 10);
+INSERT INTO sights (name, city_id) VALUES ('Istiqlal Mosque', 10);
+INSERT INTO sights (name, city_id) VALUES ('House of Sampoerna', 11);
+INSERT INTO sights (name, city_id) VALUES ('Submarine Momnument', 11);
+INSERT INTO sights (name, city_id) VALUES ('Taman Bungkul', 11);
+INSERT INTO sights (name, city_id) VALUES ('Summarecon Mall', 12);
+INSERT INTO sights (name, city_id) VALUES ('Metropolitan Mall', 12);
+INSERT INTO sights (name, city_id) VALUES ('Grand Galaxy Park', 12);
 
 INSERT INTO cities (name, country_id) VALUES ('Karachi', 5);
 INSERT INTO cities (name, country_id) VALUES ('Lahore', 5);
 INSERT INTO cities (name, country_id) VALUES ('Faisalabad', 5);
 
+INSERT INTO sights (name, city_id) VALUES ('Mazar-e-Quaid', 13);
+INSERT INTO sights (name, city_id) VALUES ('Frere Hall', 13);
+INSERT INTO sights (name, city_id) VALUES ('Air Force Museum', 13);
+INSERT INTO sights (name, city_id) VALUES ('Badshahi Mosque', 14);
+INSERT INTO sights (name, city_id) VALUES ('Lahore Fort', 14);
+INSERT INTO sights (name, city_id) VALUES ('Lahore Museum', 14);
+INSERT INTO sights (name, city_id) VALUES ('Lyallpur Galleria', 15);
+INSERT INTO sights (name, city_id) VALUES ('Jinnah Gardens', 15);
+INSERT INTO sights (name, city_id) VALUES ('D Ground Park', 15);
+
 INSERT INTO cities (name, country_id) VALUES ('Sao Paulo', 6);
 INSERT INTO cities (name, country_id) VALUES ('Rio de Janeiro', 6);
 INSERT INTO cities (name, country_id) VALUES ('Salvador', 6);
+
+INSERT INTO sights (name, city_id) VALUES ('Ibirapuera Park', 16);
+INSERT INTO sights (name, city_id) VALUES ('Museum of Art', 16);
+INSERT INTO sights (name, city_id) VALUES ('Sao Paulo Cathedral', 16);
+INSERT INTO sights (name, city_id) VALUES ('Christ the Redeemer', 17);
+INSERT INTO sights (name, city_id) VALUES ('Tijuca National Park', 17);
+INSERT INTO sights (name, city_id) VALUES ('Maracana', 17);
+INSERT INTO sights (name, city_id) VALUES ('Basilica do Senhor', 18);
+INSERT INTO sights (name, city_id) VALUES ('Barra Lighthouse', 18);
+INSERT INTO sights (name, city_id) VALUES ('Elevador Lacerda', 18);
 
 INSERT INTO cities (name, country_id) VALUES ('Lagos', 7);
 INSERT INTO cities (name, country_id) VALUES ('Kano', 7);
@@ -234,3 +274,31 @@ INSERT INTO users (first_name, last_name) VALUES ('Jack', 'Sparrow');
 
 INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (1, 1, True, True);
 INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (1, 2, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (1, 3, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (2, 4, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (2, 5, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (2, 6, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (3, 7, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (3, 8, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (3, 9, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (4, 10, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (4, 11, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (4, 12, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (5, 13, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (5, 14, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (5, 15, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (6, 16, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (6, 17, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (6, 18, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (7, 19, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (7, 20, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (7, 21, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (8, 22, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (8, 23, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (8, 24, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (9, 25, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (9, 26, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (9, 27, False, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (10, 28, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (10, 29, True, True);
+INSERT INTO visits (user_id, city_id, visited, on_list) VALUES (10, 30, False, True);
