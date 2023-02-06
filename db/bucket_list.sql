@@ -218,25 +218,85 @@ INSERT INTO cities (name, country_id) VALUES ('Mexico City', 10);
 INSERT INTO cities (name, country_id) VALUES ('Guadalajara', 10);
 INSERT INTO cities (name, country_id) VALUES ('Monterrey', 10);
 
+INSERT INTO sights (name, city_id) VALUES ('Frida Kahlo Museum', 28);
+INSERT INTO sights (name, city_id) VALUES ('Palacio de Bellas Artes', 28);
+INSERT INTO sights (name, city_id) VALUES ('Museo Nacional de Antropolgia', 28);
+INSERT INTO sights (name, city_id) VALUES ('Guadalajara Cathedral', 29);
+INSERT INTO sights (name, city_id) VALUES ('Templo Exiatorio', 29);
+INSERT INTO sights (name, city_id) VALUES ('Rotonda de los Jaliscienses', 29);
+INSERT INTO sights (name, city_id) VALUES ('Monterey Bay Aquarium', 30);
+INSERT INTO sights (name, city_id) VALUES ('Old Fishermans Wharf', 30);
+INSERT INTO sights (name, city_id) VALUES ('Dennis the Menace Playground', 30);
+
 INSERT INTO cities (name, country_id) VALUES ('Tokyo', 11);
 INSERT INTO cities (name, country_id) VALUES ('Kyoto', 11);
 INSERT INTO cities (name, country_id) VALUES ('Sapporo', 11);
+
+INSERT INTO sights (name, city_id) VALUES ('Senso-ji', 31);
+INSERT INTO sights (name, city_id) VALUES ('Meiji Jingu', 31);
+INSERT INTO sights (name, city_id) VALUES ('Tokyo Skytree', 31);
+INSERT INTO sights (name, city_id) VALUES ('Kinkaku-ji', 32);
+INSERT INTO sights (name, city_id) VALUES ('Fushimi Inari Taisha', 32);
+INSERT INTO sights (name, city_id) VALUES ('Kiyomizu-dera', 32);
+INSERT INTO sights (name, city_id) VALUES ('Hokkaido Jingu', 33);
+INSERT INTO sights (name, city_id) VALUES ('Sapporo TV Tower', 33);
+INSERT INTO sights (name, city_id) VALUES ('Sapporo Beer Museum', 33);
 
 INSERT INTO cities (name, country_id) VALUES ('Addis Ababa', 12);
 INSERT INTO cities (name, country_id) VALUES ('Dire Dawa', 12);
 INSERT INTO cities (name, country_id) VALUES ('Bahir Dar', 12);
 
+INSERT INTO sights (name, city_id) VALUES ('National Museum of Ehiopia', 34);
+INSERT INTO sights (name, city_id) VALUES ('Holy Trinity Cathedral', 34);
+INSERT INTO sights (name, city_id) VALUES ('Ethnological Museum', 34);
+INSERT INTO sights (name, city_id) VALUES ('Kafira Market', 35);
+INSERT INTO sights (name, city_id) VALUES ('Djibouti Rail Yard', 35);
+INSERT INTO sights (name, city_id) VALUES ('Dire Dawa Market', 35);
+INSERT INTO sights (name, city_id) VALUES ('Lions Art Gallery', 36);
+INSERT INTO sights (name, city_id) VALUES ('Bahir Dar Abay River Bridge', 36);
+INSERT INTO sights (name, city_id) VALUES ('Bezawit Palace', 36);
+
 INSERT INTO cities (name, country_id) VALUES ('Manila', 13);
 INSERT INTO cities (name, country_id) VALUES ('Makati', 13);
 INSERT INTO cities (name, country_id) VALUES ('Alaminos', 13);
+
+INSERT INTO sights (name, city_id) VALUES ('Rizal Park', 37);
+INSERT INTO sights (name, city_id) VALUES ('Fort Santiago', 37);
+INSERT INTO sights (name, city_id) VALUES ('Museum of Fine Arts', 37);
+INSERT INTO sights (name, city_id) VALUES ('Ayala Triangle Gardens', 38);
+INSERT INTO sights (name, city_id) VALUES ('Ayala Museum', 38);
+INSERT INTO sights (name, city_id) VALUES ('Yuchengco Museum', 38);
+INSERT INTO sights (name, city_id) VALUES ('Hundred Islands National Park', 39);
+INSERT INTO sights (name, city_id) VALUES ('Christ the Savior', 39);
+INSERT INTO sights (name, city_id) VALUES ('Cuenco Cave', 39);
 
 INSERT INTO cities (name, country_id) VALUES ('Cairo', 14);
 INSERT INTO cities (name, country_id) VALUES ('Luxor', 14);
 INSERT INTO cities (name, country_id) VALUES ('Alexandria', 14);
 
+INSERT INTO sights (name, city_id) VALUES ('The Egyptian Museum', 40);
+INSERT INTO sights (name, city_id) VALUES ('Khan el-Khalili', 40);
+INSERT INTO sights (name, city_id) VALUES ('Al-Azhar Mosque', 40);
+INSERT INTO sights (name, city_id) VALUES ('karnak', 41);
+INSERT INTO sights (name, city_id) VALUES ('Luxor Temple', 41);
+INSERT INTO sights (name, city_id) VALUES ('Luxor Museum', 41);
+INSERT INTO sights (name, city_id) VALUES ('Montaza Palace', 42);
+INSERT INTO sights (name, city_id) VALUES ('Citadel of Qaitbay', 42);
+INSERT INTO sights (name, city_id) VALUES ('Bibliotheca Alexandrina', 42);
+
 INSERT INTO cities (name, country_id) VALUES ('Ho Chi Minh City', 15);
 INSERT INTO cities (name, country_id) VALUES ('Hanoi', 15);
 INSERT INTO cities (name, country_id) VALUES ('Hue', 15);
+
+INSERT INTO sights (name, city_id) VALUES ('War Remnants Museum', 43);
+INSERT INTO sights (name, city_id) VALUES ('Reunification Palace', 43);
+INSERT INTO sights (name, city_id) VALUES ('Cu Chi Tunnel', 43);
+INSERT INTO sights (name, city_id) VALUES ('Temple of Literature', 44);
+INSERT INTO sights (name, city_id) VALUES ('Ho Chi Minhs Mausoleum', 44);
+INSERT INTO sights (name, city_id) VALUES ('Hoa Lo Prison Relic', 44);
+INSERT INTO sights (name, city_id) VALUES ('Thien Mu Pagoda', 45);
+INSERT INTO sights (name, city_id) VALUES ('Mausoleum of Emperor Khia', 45);
+INSERT INTO sights (name, city_id) VALUES ('Mausoleum of Emperor Tu Duc', 45);
 
 INSERT INTO cities (name, country_id) VALUES ('Kinshasa', 16);
 INSERT INTO cities (name, country_id) VALUES ('Likasi', 16);
