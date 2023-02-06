@@ -37,5 +37,10 @@ The application allows users to view countries / cities / sights, add and update
 
 ![Alt text](PDA/pseudo_code.png?raw=true "Optional Title")
 
+## TO ADD
 
+1.  Activity Diagram
+2.  Implementations Constraint Plan
+3.  Screenshot of user entry screen and result before and after.
+4.  Screenshot on user requesting data (button click) and displaying of that data.
 
