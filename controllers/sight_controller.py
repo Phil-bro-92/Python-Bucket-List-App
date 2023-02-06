@@ -20,7 +20,8 @@ def new_sight(id):
 
 @sights_blueprint.route("/sights/<id>", methods=["POST"])
 def create_sight(id):
+    city = city_repository.select(id)
     name = request.form["sight"]
-    sight = Sight(name, id)
+    sight = Sight(name, city)
     sight_repository.save(sight)
     return redirect("/sights/" + id)
