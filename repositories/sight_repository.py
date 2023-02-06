@@ -28,7 +28,7 @@ def select(id):
     sight = None
     sql = "SELECT * FROM sights WHERE id = %s"
     values = [id]
-    result = run_sql(sql, values)
+    result = run_sql(sql, values)[0]
 
     if result:
         city = city_repository.select(result['city_id'])

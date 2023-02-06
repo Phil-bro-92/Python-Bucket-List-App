@@ -29,7 +29,14 @@ def create_sight(id):
     return redirect("/sights/" + id)
 
 
-@sights_blueprint.route("/sights/<city_id>/<sight_id>/delete", methods=['POST'])
+@sights_blueprint.route("/sights/<city_id>/<sight_id>/delete", methods=["POST"])
 def delete_sight(city_id, sight_id):
     sight_repository.delete(sight_id)
     return redirect("/sights/" + city_id)
+
+
+@sights_blueprint.route("/sights/<city_id>/<sight_id>/edit", methods=["POST"])
+def edit_sight(city_id, sight_id):
+    city = city_repository.select(city_id)
+    sight = sight_repository.select(sight_id)
+    return render_template("sights/edit.html", sight=sight, city=city)

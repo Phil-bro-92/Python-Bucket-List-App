@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<form action="/" method="post">
+  <div>
+    <label for="update_sight">Sight:</label>
+    <input
+      type="text"
+      name="update_sight"
+      id="update_sight"
+      value="{{sight.name}}"
+      required
+      autofocus
+    />
+  </div>
+  <div><button type="submit">Update</button></div>
+</form>
+{% endblock %}
