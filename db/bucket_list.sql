@@ -302,53 +302,183 @@ INSERT INTO cities (name, country_id) VALUES ('Kinshasa', 16);
 INSERT INTO cities (name, country_id) VALUES ('Likasi', 16);
 INSERT INTO cities (name, country_id) VALUES ('Lubumbashi', 16);
 
+INSERT INTO sights (name, city_id) VALUES ('Lola ya Bonobo Sanctuary', 46);
+INSERT INTO sights (name, city_id) VALUES ('Academia de Bellas Artes', 46);
+INSERT INTO sights (name, city_id) VALUES ('Lac Ma Vallee', 46);
+INSERT INTO sights (name, city_id) VALUES ('Walking Tour', 47);
+INSERT INTO sights (name, city_id) VALUES ('Katanga Tour', 47);
+INSERT INTO sights (name, city_id) VALUES ('Likasi Lakes', 47);
+INSERT INTO sights (name, city_id) VALUES ('Catherdral St Pierre', 48);
+INSERT INTO sights (name, city_id) VALUES ('Lac Kipopo', 48);
+INSERT INTO sights (name, city_id) VALUES ('Zoological Garden', 48);
+
 INSERT INTO cities (name, country_id) VALUES ('Istanbul', 17);
 INSERT INTO cities (name, country_id) VALUES ('Izmir', 17);
 INSERT INTO cities (name, country_id) VALUES ('Ankara', 17);
+
+INSERT INTO sights (name, city_id) VALUES ('Hagia Sophia', 49);
+INSERT INTO sights (name, city_id) VALUES ('The Blue Mosque', 49);
+INSERT INTO sights (name, city_id) VALUES ('Grand Bazaar', 49);
+INSERT INTO sights (name, city_id) VALUES ('Archaeological Museum', 50);
+INSERT INTO sights (name, city_id) VALUES ('Historial Elevator Building', 50);
+INSERT INTO sights (name, city_id) VALUES ('Aziz Polikarps Church', 50);
+INSERT INTO sights (name, city_id) VALUES ('Anitkabir', 51);
+INSERT INTO sights (name, city_id) VALUES ('Museum of Anatolian', 51);
+INSERT INTO sights (name, city_id) VALUES ('Ankara Castle', 51);
 
 INSERT INTO cities (name, country_id) VALUES ('Tehran', 18);
 INSERT INTO cities (name, country_id) VALUES ('Kermanshah', 18);
 INSERT INTO cities (name, country_id) VALUES ('Tabriz', 18);
 
+INSERT INTO sights (name, city_id) VALUES ('Shahyad Tower', 52);
+INSERT INTO sights (name, city_id) VALUES ('Tabiat Bridge', 52);
+INSERT INTO sights (name, city_id) VALUES ('Golestan Palace', 52);
+INSERT INTO sights (name, city_id) VALUES ('Taq-e Bostan', 53);
+INSERT INTO sights (name, city_id) VALUES ('Tekiye Moaven Al Molk', 53);
+INSERT INTO sights (name, city_id) VALUES ('Shafei Jameh Mosque', 53);
+INSERT INTO sights (name, city_id) VALUES ('Tabriz Grand Bazaar', 54);
+INSERT INTO sights (name, city_id) VALUES ('Blue Mosque', 54);
+INSERT INTO sights (name, city_id) VALUES ('Arg-e-Alishah', 54);
+
 INSERT INTO cities (name, country_id) VALUES ('Berlin', 19);
 INSERT INTO cities (name, country_id) VALUES ('Munich', 19);
 INSERT INTO cities (name, country_id) VALUES ('Frankfurt', 19);
+
+INSERT INTO sights (name, city_id) VALUES ('Brandenburg Gate', 55);
+INSERT INTO sights (name, city_id) VALUES ('Reichstag Building', 55);
+INSERT INTO sights (name, city_id) VALUES ('CharlottenBurg Palace', 55);
+INSERT INTO sights (name, city_id) VALUES ('English Garden', 56);
+INSERT INTO sights (name, city_id) VALUES ('Marienplatz', 56);
+INSERT INTO sights (name, city_id) VALUES ('Victuals Market', 56);
+INSERT INTO sights (name, city_id) VALUES ('Palm Gardens', 57);
+INSERT INTO sights (name, city_id) VALUES ('Stadel Museum', 57);
+INSERT INTO sights (name, city_id) VALUES ('Alte Oper', 57);
 
 INSERT INTO cities (name, country_id) VALUES ('Bangkok', 20);
 INSERT INTO cities (name, country_id) VALUES ('Phuket', 20);
 INSERT INTO cities (name, country_id) VALUES ('Thani', 20);
 
+INSERT INTO sights (name, city_id) VALUES ('The Grand Palace', 58);
+INSERT INTO sights (name, city_id) VALUES ('Chatuchak Weekend Market', 58);
+INSERT INTO sights (name, city_id) VALUES ('Wat Traimit Withayaram', 58);
+INSERT INTO sights (name, city_id) VALUES ('The Big Buddha', 59);
+INSERT INTO sights (name, city_id) VALUES ('Monkey Hill Viewpoint', 59);
+INSERT INTO sights (name, city_id) VALUES ('Old Phuket Town', 59);
+INSERT INTO sights (name, city_id) VALUES ('Khao Sok National Park', 60);
+INSERT INTO sights (name, city_id) VALUES ('City Pillar Shrine', 60);
+INSERT INTO sights (name, city_id) VALUES ('Ko Lamphu Public Park', 60);
+
 INSERT INTO cities (name, country_id) VALUES ('London', 21);
 INSERT INTO cities (name, country_id) VALUES ('Edinburgh', 21);
 INSERT INTO cities (name, country_id) VALUES ('Cardiff', 21);
+
+INSERT INTO sights (name, city_id) VALUES ('Tower of London', 61);
+INSERT INTO sights (name, city_id) VALUES ('London Eye', 61);
+INSERT INTO sights (name, city_id) VALUES ('Buckingham Palace', 61);
+INSERT INTO sights (name, city_id) VALUES ('Edinburgh Castle', 62);
+INSERT INTO sights (name, city_id) VALUES ('National Museum of Scotland', 62);
+INSERT INTO sights (name, city_id) VALUES ('Holyrood Palace', 62);
+INSERT INTO sights (name, city_id) VALUES ('Cardiff Castle', 63);
+INSERT INTO sights (name, city_id) VALUES ('National Museum Cardiff', 63);
+INSERT INTO sights (name, city_id) VALUES ('Wales Millennium Centre', 63);
 
 INSERT INTO cities (name, country_id) VALUES ('Paris', 22);
 INSERT INTO cities (name, country_id) VALUES ('Marseille', 22);
 INSERT INTO cities (name, country_id) VALUES ('Lille', 22);
 
+INSERT INTO sights (name, city_id) VALUES ('Eiffel Tower', 64);
+INSERT INTO sights (name, city_id) VALUES ('Louvre Museum', 64);
+INSERT INTO sights (name, city_id) VALUES ('Arc de Triomphe', 64);
+INSERT INTO sights (name, city_id) VALUES ('Basilique Notre-Dame', 65);
+INSERT INTO sights (name, city_id) VALUES ('Museum of Civilizations', 65);
+INSERT INTO sights (name, city_id) VALUES ('Cathedrale La Major', 65);
+INSERT INTO sights (name, city_id) VALUES ('Palace des Beaux Arts', 66);
+INSERT INTO sights (name, city_id) VALUES ('La Vielle Bourse', 66);
+INSERT INTO sights (name, city_id) VALUES ('Musee de Hospice', 66);
+
 INSERT INTO cities (name, country_id) VALUES ('Rome', 23);
 INSERT INTO cities (name, country_id) VALUES ('Venice', 23);
 INSERT INTO cities (name, country_id) VALUES ('Milan', 23);
+
+INSERT INTO sights (name, city_id) VALUES ('Colosseum', 67);
+INSERT INTO sights (name, city_id) VALUES ('Pantheon', 67);
+INSERT INTO sights (name, city_id) VALUES ('Trevi Fountain', 67);
+INSERT INTO sights (name, city_id) VALUES ('St. Marks Square', 68);
+INSERT INTO sights (name, city_id) VALUES ('St. Marks Basilica', 68);
+INSERT INTO sights (name, city_id) VALUES ('Rialto Bridge', 68);
+INSERT INTO sights (name, city_id) VALUES ('Duomo di Milano', 69);
+INSERT INTO sights (name, city_id) VALUES ('Galleria Vittorio', 69);
+INSERT INTO sights (name, city_id) VALUES ('Sforzesco Castle', 69);
 
 INSERT INTO cities (name, country_id) VALUES ('Tanga', 24);
 INSERT INTO cities (name, country_id) VALUES ('Mwanza', 24);
 INSERT INTO cities (name, country_id) VALUES ('Mbeya', 24);
 
+INSERT INTO sights (name, city_id) VALUES ('Amboni Caves', 70);
+INSERT INTO sights (name, city_id) VALUES ('Tanga Museum', 70);
+INSERT INTO sights (name, city_id) VALUES ('Mkomazi', 70);
+INSERT INTO sights (name, city_id) VALUES ('Bismarck Rock', 71);
+INSERT INTO sights (name, city_id) VALUES ('Saanane National Park', 71);
+INSERT INTO sights (name, city_id) VALUES ('Rock City Mall', 71);
+INSERT INTO sights (name, city_id) VALUES ('Lake Ngozi', 72);
+INSERT INTO sights (name, city_id) VALUES ('Mbeya Zoo', 72);
+INSERT INTO sights (name, city_id) VALUES ('Loleza Mountain', 72);
+
 INSERT INTO cities (name, country_id) VALUES ('Cape Town', 25);
 INSERT INTO cities (name, country_id) VALUES ('Johannesburg', 25);
 INSERT INTO cities (name, country_id) VALUES ('Pretoria', 25);
+
+INSERT INTO sights (name, city_id) VALUES ('V & A Waterfront', 73);
+INSERT INTO sights (name, city_id) VALUES ('Two Oceans Aquarium', 73);
+INSERT INTO sights (name, city_id) VALUES ('Zeitz Museum', 73);
+INSERT INTO sights (name, city_id) VALUES ('Gold Reef Theme Park', 74);
+INSERT INTO sights (name, city_id) VALUES ('Constitution Hill Precint', 74);
+INSERT INTO sights (name, city_id) VALUES ('Apartheid Museum', 74);
+INSERT INTO sights (name, city_id) VALUES ('Voortrekker Monument', 75);
+INSERT INTO sights (name, city_id) VALUES ('Union Buildings', 75);
+INSERT INTO sights (name, city_id) VALUES ('Freedom Park', 75);
 
 INSERT INTO cities (name, country_id) VALUES ('Yangon', 26);
 INSERT INTO cities (name, country_id) VALUES ('Bago', 26);
 INSERT INTO cities (name, country_id) VALUES ('Sittwe', 26);
 
+INSERT INTO sights (name, city_id) VALUES ('Shwedagon Pagoda', 76);
+INSERT INTO sights (name, city_id) VALUES ('Sule Pagoda', 76);
+INSERT INTO sights (name, city_id) VALUES ('Chaukhtatgyi Buddha Temple', 76);
+INSERT INTO sights (name, city_id) VALUES ('Kyaik Pun Pagoda', 77);
+INSERT INTO sights (name, city_id) VALUES ('Golden Palace', 77);
+INSERT INTO sights (name, city_id) VALUES ('Hinthagon Pagoda', 77);
+INSERT INTO sights (name, city_id) VALUES ('Buddhist Museum', 78);
+INSERT INTO sights (name, city_id) VALUES ('U Ottama Park', 78);
+INSERT INTO sights (name, city_id) VALUES ('Sittwe View Point Park', 78);
+
 INSERT INTO cities (name, country_id) VALUES ('Nairobi', 27);
 INSERT INTO cities (name, country_id) VALUES ('Mombasa', 27);
 INSERT INTO cities (name, country_id) VALUES ('Meru', 27);
 
+INSERT INTO sights (name, city_id) VALUES ('Nairobi National Park', 79);
+INSERT INTO sights (name, city_id) VALUES ('Giraffe Centre', 79);
+INSERT INTO sights (name, city_id) VALUES ('Karen Blixen Museum', 79);
+INSERT INTO sights (name, city_id) VALUES ('Fort Jesus Museum', 80);
+INSERT INTO sights (name, city_id) VALUES ('Haller Park', 80);
+INSERT INTO sights (name, city_id) VALUES ('Old Town', 80);
+INSERT INTO sights (name, city_id) VALUES ('Mount Kenya Nationa Park', 81);
+INSERT INTO sights (name, city_id) VALUES ('Lewa Wildlife Conservancy', 81);
+INSERT INTO sights (name, city_id) VALUES ('Ngare Ndare Forest Park', 81);
+
 INSERT INTO cities (name, country_id) VALUES ('Seoul', 28);
 INSERT INTO cities (name, country_id) VALUES ('Busan', 28);
 INSERT INTO cities (name, country_id) VALUES ('Ulsan', 28);
+
+INSERT INTO sights (name, city_id) VALUES ('Gyeongbokgung Palace', 82);
+INSERT INTO sights (name, city_id) VALUES ('N Seoul Tower', 82);
+INSERT INTO sights (name, city_id) VALUES ('National Museum of Korea', 82);
+INSERT INTO sights (name, city_id) VALUES ('Haedong Temple', 83);
+INSERT INTO sights (name, city_id) VALUES ('Taejongdae Resort Park', 83);
+INSERT INTO sights (name, city_id) VALUES ('Gamcheon Culture Village', 83);
+INSERT INTO sights (name, city_id) VALUES ('Daewangam Park', 84);
+INSERT INTO sights (name, city_id) VALUES ('Ganjeolgot Cape', 84);
+INSERT INTO sights (name, city_id) VALUES ('Taehwagang National Garden', 84);
 
 
 INSERT INTO users (first_name, last_name) VALUES ('Harley', 'Quinn');
