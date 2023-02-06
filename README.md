@@ -50,10 +50,19 @@ The application allows users to view countries / cities / sights, add and update
 
 ![Alt text](PDA/pseudo_code.png?raw=true "Optional Title")
 
+## Site Screenshots
+
+![Alt text](PDA/site_snaps/homepage.png?raw=true "Optional Title")
+
+![Alt text](PDA/site_snaps/country_list.png?raw=true "Optional Title")
+
+![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title")
+
+![Alt text](PDA/site_snaps/visits.png?raw=true "Optional Title")
+
+![Alt text](PDA/site_snaps/add_visits.png?raw=true "Optional Title")
+
 ## TO ADD
 
 1.  Activity Diagram
 2.  Implementations Constraint Plan
-3.  Screenshot of user entry screen and result before and after.
-4.  Screenshot on user requesting data (button click) and displaying of that data.
-
