@@ -25,6 +25,10 @@ The application allows users to view countries / cities / sights, add and update
 
 ![Alt text](PDA/class_diagrams.png?raw=true "Optional Title")
 
+## Object Diagrams
+
+![Alt text](PDA/object_diagrams.png?raw=true "Optional Title")
+
 ## Use Case Diagram (Country Feature)
 
 ![Alt text](PDA/use_case.png?raw=true "Optional Title")
