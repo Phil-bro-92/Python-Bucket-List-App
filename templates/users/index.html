@@ -10,8 +10,8 @@
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
-      <th>Edit</th>
-      <th>Delete</th>
+      <th class="cell-btn">Edit</th>
+      <th class="cell-btn">Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -19,14 +19,14 @@
     <tr onclick="window.location='/visits/{{user.id}}'">
       <td>{{user.first_name}}</td>
       <td>{{user.last_name}}</td>
-      <td>
+      <td class="cell-btn">
         <form action="/users/{{user.id}}/edit" method="post">
           <button type="submit" class="edit-btn">
             <i class="fa-solid fa-pen-to-square"></i>
           </button>
         </form>
       </td>
-      <td class="button-cell">
+      <td class="cell-btn">
         <form action="/users/{{user.id}}/delete" method="post">
           <button type="submit" class="delete-btn">
             <i class="fa-solid fa-trash"></i>

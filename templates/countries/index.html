@@ -8,8 +8,8 @@
       <th>Country</th>
       <th>Continent</th>
       <th class="hide-population">Population</th>
-      <th>Edit</th>
-      <th>Delete</th>
+      <th class="cell-btn">Edit</th>
+      <th class="cell-btn">Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -18,12 +18,12 @@
       <td>{{country.name}}</td>
       <td>{{country.continent}}</td>
       <td class="hide-population">{{"{:,}".format(country.population)}}</td>
-      <td>
+      <td class="cell-btn">
         <form action="/countries/{{country.id}}/edit" method="post"
           ><button type="submit" class="edit-btn"><i class="fa-solid fa-pen-to-square fa-lg"></i></button
         ></form>
       </td>
-      <td>
+      <td class="cell-btn">
         <form action="/countries/{{country.id}}/delete" method="post">
           <button type="submit" class="delete-btn"><i class="fa-solid fa-trash fa-lg"></i></button>
         </form>

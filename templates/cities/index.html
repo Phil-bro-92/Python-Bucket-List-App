@@ -9,8 +9,8 @@
   <thead>
     <tr>
       <th>City</th>
-      <th>Edit</th>
-      <th>Delete</th>
+      <th class="cell-btn">Edit</th>
+      <th class="cell-btn">Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -18,14 +18,14 @@
 
     <tr onclick="window.location='/sights/{{city.id}}'">
       <td>{{city.name}}</td>
-      <td>
+      <td class="cell-btn">
         <form action="/cities/{{country.id}}/{{city.id}}/edit">
           <button type="submit" class="edit-btn">
             <i class="fa-solid fa-pen-to-square fa-lg"></i>
           </button>
         </form>
       </td>
-      <td>
+      <td class="cell-btn">
         <form action="/cities/{{country.id}}/{{city.id}}/delete" method="post">
           <button type="submit" class="delete-btn">
             <i class="fa-solid fa-trash fa-lg"></i>

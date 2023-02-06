@@ -187,10 +187,23 @@ div {
   line-height: 2em;
 }
 
-
+.cell-btn {
+  width: 60px;
+}
 
 @media (max-width: 600px) {
   .hide-population {
     display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .nav > form > button {
+    width: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  .nav > form > button {
+    width: 500px;
   }
 }
