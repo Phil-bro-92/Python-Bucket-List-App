@@ -54,3 +54,6 @@ def update(visit):
     sql = "UPDATE visits SET (user_id, city_id, visited, on_list) = (%s, %s, %s, %s) WHERE id = %s"
     values = [visit.user.id, visit.city.id, visit.visited, visit.on_list, visit.id]
     run_sql(sql, values)
+
+def visits(user):
+    sql = "SELECT * FROM users"

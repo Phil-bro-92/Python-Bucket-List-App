@@ -8,11 +8,26 @@ from models.visit import Visit
 visits_blueprint = Blueprint("visits", __name__)
 
 
-@visits_blueprint.route("/visits")
-def visits():
-    users = user_repository.select_all()
-    countries = country_repository.select_all()
-    cities = city_repository.select_all()
+@visits_blueprint.route("/visits/<user_id>")
+def visits(user_id):
+    user = user_repository.select(user_id)
+    visits = visit_repository.visits(user)
     return render_template(
-        "visits/index.html", users=users, countries=countries, cities=cities
+        "visits/index.html",
+        user=user,
     )
+
+
+@visits_blueprint.route("/visits/<user_id>/new")
+def new_visit(user_id):
+    cities = city_repository.select_all()
+    user = user_repository.select(user_id)
+    return render_template("visits/new.html", user=user, cities=cities)
+
+
+@visits_blueprint.route("/visits/<user_id>/<city_id>/new", methods=["POST"])
+def create_bucket_list_entry(user_id, city_id):
+    user = user_repository.select(user_id)
+    city = city_repository.select(city_id)
+    visit_repository.save(visit)
+    return redirect("/visits/" + user_id, user = user, city = city)

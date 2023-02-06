@@ -31,7 +31,7 @@ header > a {
 }
 
 .nav > form > button {
-  width: 130px;
+  width: 200px;
   background-image: linear-gradient(to right, #9cdbc4, rgb(215, 215, 136));
   color: black;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -175,4 +175,8 @@ div {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.bucket-list-header {
+  text-align: center;
 }

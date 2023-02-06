@@ -1,51 +1,32 @@
 {% extends "base.html" %} {% block content %}
-
-<form action="/visits" method="post">
-  <h2>Add a City to your Bucket List</h2>
-  <div>
-    <label for="user">User:</label>
-    <select name="user" id="user_visit">
-      {% for user in users %}
-      <option value="{{user.id}}">
-        {{user.first_name}} {{user.last_name}}
-      </option>
-      {% endfor %}
-    </select>
-  </div>
-  <div>
-    <label for="city">City:</label>
-    <select name="city" id="city_visit">
-      {% for city in cities %}
-      <option value="{{city.id}}">{{city.name}}</option>
-      {% endfor %}
-    </select>
-  </div>
-  <div>
-    <button type="submit">Submit</button>
-  </div>
+<form action="/visits/{{user.id}}/new">
+  <button type="submit" class="add-btn">
+    <i class="fa-solid fa-plus"></i>
+  </button>
 </form>
-<form action="/visits" method="post">
-    <h2>Add a City to your Visited List</h2>
-  <div>
-    <label for="user">User:</label>
-    <select name="user" id="user_visit">
-      {% for user in users %}
-      <option value="{{user.id}}">
-        {{user.first_name}} {{user.last_name}}
-      </option>
-      {% endfor %}
-    </select>
-  </div>
-  <div>
-    <label for="city">City:</label>
-    <select name="city" id="city_visit">
-      {% for city in cities %}
-      <option value="{{city.id}}">{{city.name}}</option>
-      {% endfor %}
-    </select>
-  </div>
-  <div>
-    <button type="submit">Submit</button>
-  </div>
-</form>
+<h2 class="bucket-list-header">{{user.first_name}} {{user.last_name}}'s Bucket List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Destination</th>
+      <th>Been Before?</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in users %}
+    <tr onclick="window.location='/cities/{{city.id}}'">
+      <td>{{city.name}}</td>
+      <td>Yes</td>
+      <td>
+        <form action="/visits/{{user.id}}/delete" method="post">
+          <button type="submit" class="delete-btn">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 {% endblock %}
