@@ -91,11 +91,30 @@ VALUES ('South Korea', 'Asia', 51269185);
 INSERT INTO cities (name, country_id) VALUES ('Shanghai', 1);
 INSERT INTO cities (name, country_id) VALUES ('Beijing', 1);
 INSERT INTO cities (name, country_id) VALUES ('Guangzhou', 1);
-INSERT INTO cities (name, country_id) VALUES ('Chengdu', 1);
+
+INSERT INTO sights (name, city_id) VALUES ('The Bund', 1);
+INSERT INTO sights (name, city_id) VALUES ('The Oriental Pearl TV Tower', 1);
+INSERT INTO sights (name, city_id) VALUES ('Yu Garden', 1);
+INSERT INTO sights (name, city_id) VALUES ('The Great Wall of China', 2);
+INSERT INTO sights (name, city_id) VALUES ('Temple of Heaven', 2);
+INSERT INTO sights (name, city_id) VALUES ('Tiananmen Square', 2);
+INSERT INTO sights (name, city_id) VALUES ('Chen Clan Ancestral Hall', 3);
+INSERT INTO sights (name, city_id) VALUES ('Shamiandao Island', 3);
+INSERT INTO sights (name, city_id) VALUES ('The Western Han Museum', 3);
 
 INSERT INTO cities (name, country_id) VALUES ('Delhi', 2);
 INSERT INTO cities (name, country_id) VALUES ('Mumbai', 2);
 INSERT INTO cities (name, country_id) VALUES ('Kolkatka', 2);
+
+INSERT INTO sights (name, city_id) VALUES ('India Gate', 4);
+INSERT INTO sights (name, city_id) VALUES ('Red Fort', 4);
+INSERT INTO sights (name, city_id) VALUES ('Lotus Temple', 4);
+INSERT INTO sights (name, city_id) VALUES ('Gateway of India', 5);
+INSERT INTO sights (name, city_id) VALUES ('Shivaji Maharaj', 5);
+INSERT INTO sights (name, city_id) VALUES ('Shree Temple', 5);
+INSERT INTO sights (name, city_id) VALUES ('Victoria Memorial', 6);
+INSERT INTO sights (name, city_id) VALUES ('Howrah Bridge', 6);
+INSERT INTO sights (name, city_id) VALUES ('Indian Museun', 6);
 
 INSERT INTO cities (name, country_id) VALUES ('New York', 3);
 INSERT INTO cities (name, country_id) VALUES ('Los Angeles', 3);
@@ -129,3 +148,86 @@ INSERT INTO cities (name, country_id) VALUES ('Mexico City', 10);
 INSERT INTO cities (name, country_id) VALUES ('Guadalajara', 10);
 INSERT INTO cities (name, country_id) VALUES ('Monterrey', 10);
 
+INSERT INTO cities (name, country_id) VALUES ('Tokyo', 11);
+INSERT INTO cities (name, country_id) VALUES ('Kyoto', 11);
+INSERT INTO cities (name, country_id) VALUES ('Sapporo', 11);
+
+INSERT INTO cities (name, country_id) VALUES ('Addis Ababa', 12);
+INSERT INTO cities (name, country_id) VALUES ('Dire Dawa', 12);
+INSERT INTO cities (name, country_id) VALUES ('Bahir Dar', 12);
+
+INSERT INTO cities (name, country_id) VALUES ('Manila', 13);
+INSERT INTO cities (name, country_id) VALUES ('Makati', 13);
+INSERT INTO cities (name, country_id) VALUES ('Alaminos', 13);
+
+INSERT INTO cities (name, country_id) VALUES ('Cairo', 14);
+INSERT INTO cities (name, country_id) VALUES ('Luxor', 14);
+INSERT INTO cities (name, country_id) VALUES ('Alexandria', 14);
+
+INSERT INTO cities (name, country_id) VALUES ('Ho Chi Minh City', 15);
+INSERT INTO cities (name, country_id) VALUES ('Hanoi', 15);
+INSERT INTO cities (name, country_id) VALUES ('Hue', 15);
+
+INSERT INTO cities (name, country_id) VALUES ('Kinshasa', 16);
+INSERT INTO cities (name, country_id) VALUES ('Likasi', 16);
+INSERT INTO cities (name, country_id) VALUES ('Lubumbashi', 16);
+
+INSERT INTO cities (name, country_id) VALUES ('Istanbul', 17);
+INSERT INTO cities (name, country_id) VALUES ('Izmir', 17);
+INSERT INTO cities (name, country_id) VALUES ('Ankara', 17);
+
+INSERT INTO cities (name, country_id) VALUES ('Tehran', 18);
+INSERT INTO cities (name, country_id) VALUES ('Kermanshah', 18);
+INSERT INTO cities (name, country_id) VALUES ('Tabriz', 18);
+
+INSERT INTO cities (name, country_id) VALUES ('Berlin', 19);
+INSERT INTO cities (name, country_id) VALUES ('Munich', 19);
+INSERT INTO cities (name, country_id) VALUES ('Frankfurt', 19);
+
+INSERT INTO cities (name, country_id) VALUES ('Bangkok', 20);
+INSERT INTO cities (name, country_id) VALUES ('Phuket', 20);
+INSERT INTO cities (name, country_id) VALUES ('Thani', 20);
+
+INSERT INTO cities (name, country_id) VALUES ('London', 21);
+INSERT INTO cities (name, country_id) VALUES ('Edinburgh', 21);
+INSERT INTO cities (name, country_id) VALUES ('Cardiff', 21);
+
+INSERT INTO cities (name, country_id) VALUES ('Paris', 22);
+INSERT INTO cities (name, country_id) VALUES ('Marseille', 22);
+INSERT INTO cities (name, country_id) VALUES ('Lille', 22);
+
+INSERT INTO cities (name, country_id) VALUES ('Rome', 23);
+INSERT INTO cities (name, country_id) VALUES ('Venice', 23);
+INSERT INTO cities (name, country_id) VALUES ('Milan', 23);
+
+INSERT INTO cities (name, country_id) VALUES ('Tanga', 24);
+INSERT INTO cities (name, country_id) VALUES ('Mwanza', 24);
+INSERT INTO cities (name, country_id) VALUES ('Mbeya', 24);
+
+INSERT INTO cities (name, country_id) VALUES ('Cape Town', 25);
+INSERT INTO cities (name, country_id) VALUES ('Johannesburg', 25);
+INSERT INTO cities (name, country_id) VALUES ('Pretoria', 25);
+
+INSERT INTO cities (name, country_id) VALUES ('Yangon', 26);
+INSERT INTO cities (name, country_id) VALUES ('Bago', 26);
+INSERT INTO cities (name, country_id) VALUES ('Sittwe', 26);
+
+INSERT INTO cities (name, country_id) VALUES ('Nairobi', 27);
+INSERT INTO cities (name, country_id) VALUES ('Mombasa', 27);
+INSERT INTO cities (name, country_id) VALUES ('Meru', 27);
+
+INSERT INTO cities (name, country_id) VALUES ('Seoul', 28);
+INSERT INTO cities (name, country_id) VALUES ('Busan', 28);
+INSERT INTO cities (name, country_id) VALUES ('Ulsan', 28);
+
+
+INSERT INTO users (first_name, last_name) VALUES ('Harley', 'Quinn');
+INSERT INTO users (first_name, last_name) VALUES ('Ellen', 'Ripley');
+INSERT INTO users (first_name, last_name) VALUES ('Pepper', 'Potts');
+INSERT INTO users (first_name, last_name) VALUES ('Lara', 'Croft');
+INSERT INTO users (first_name, last_name) VALUES ('Mia', 'Wallace');
+INSERT INTO users (first_name, last_name) VALUES ('Vincent', 'Vega');
+INSERT INTO users (first_name, last_name) VALUES ('Mark', 'Corrigan');
+INSERT INTO users (first_name, last_name) VALUES ('Jeremy', 'Usbourne');
+INSERT INTO users (first_name, last_name) VALUES ('Henry', 'Hill');
+INSERT INTO users (first_name, last_name) VALUES ('Jack', 'Sparrow');

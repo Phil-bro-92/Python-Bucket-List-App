@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block content %}
-<form action="/" method="post">
+<form action="/cities/{{country.id}}/{{city.id}}/update" method="post">
   <div>
     <label for="update_city">City:</label>
     <input

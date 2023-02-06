@@ -43,3 +43,10 @@ def delete(country_id, city_id):
     return redirect("/cities/" + country_id)
 
 
+@cities_blueprint.route("/cities/<country_id>/<city_id>/update", methods=["POST"])
+def update(country_id, city_id):
+    name = request.form["update_city"]
+    country = country_repository.select(country_id)
+    city = City(name, country, city_id)
+    city_repository.update(city)
+    return redirect("/cities/" + country_id)
