@@ -13,10 +13,12 @@ def sights(id):
     sights = city_repository.sights(city)
     return render_template("sights/index.html", city=city, sights=sights)
 
+
 @sights_blueprint.route("/sights/<id>/new")
 def new_sight(id):
     city = city_repository.select(id)
     return render_template("sights/new.html", city=city)
+
 
 @sights_blueprint.route("/sights/<id>", methods=["POST"])
 def create_sight(id):
@@ -25,3 +27,9 @@ def create_sight(id):
     sight = Sight(name, city)
     sight_repository.save(sight)
     return redirect("/sights/" + id)
+
+
+@sights_blueprint.route("/sights/<city_id>/<sight_id>/delete", methods=['POST'])
+def delete_sight(city_id, sight_id):
+    sight_repository.delete(sight_id)
+    return redirect("/sights/" + city_id)
