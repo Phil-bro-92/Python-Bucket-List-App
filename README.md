@@ -29,5 +29,9 @@ The application allows users to view countries / cities / sights, add and update
 
 ![Alt text](PDA/use_case.png?raw=true "Optional Title")
 
+## Pseudo code example
+
+![Alt text](PDA/pseudo_code.png?raw=true "Optional Title")
+
 
 
