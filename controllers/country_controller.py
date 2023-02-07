@@ -52,7 +52,7 @@ def new_country():
 
 @countries_blueprint.route("/countries", methods=["POST"])
 def create_country():
-    country = request.form["country"]
+    country = request.form["country"].title()
     continent = request.form["continent"]
     population = request.form["population"]
     country = Country(country, continent, population)

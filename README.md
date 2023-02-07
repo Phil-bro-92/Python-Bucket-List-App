@@ -56,9 +56,7 @@ The application allows users to view countries / cities / sights, add and update
 
 ## Site Screenshots
 
-![Alt text](PDA/site_snaps/homepage.png?raw=true "Optional Title")
-
-![Alt text](PDA/site_snaps/country_list.png?raw=true "Optional Title")
+![Alt text](PDA/site_snaps/homepage.png?raw=true "Optional Title") | ![Alt text](PDA/site_snaps/country_list.png?raw=true "Optional Title")
 
 ![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title")
 
