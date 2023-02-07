@@ -61,7 +61,7 @@ def visits(user):
     sql = "SELECT v.id visit_id, u.id user_id, u.first_name, u.last_name, v.visited, v.on_list, c.id city_id, c.name city_name FROM visits AS v INNER JOIN users AS u ON u.id = v.user_id INNER JOIN cities AS c ON c.id = v.city_id WHERE u.id = %s"
     values = [user.id]
     results = run_sql(sql, values)
-    # pdb.set_trace()
+
     for result in results:
         visits.append(result)
     return visits

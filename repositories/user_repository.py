@@ -11,6 +11,26 @@ def save(user):
     user.id = results[0]["id"]
     return user
 
+def filter_by_first_name():
+    users = []
+    sql = "SELECT * FROM users ORDER BY first_name"
+    results = run_sql(sql)
+
+    for result in results:
+        user = User(result["first_name"], result["last_name"], result["id"])
+        users.append(user)
+    return users
+
+def filter_by_last_name():
+    users = []
+    sql = "SELECT * FROM users ORDER BY last_name"
+    results = run_sql(sql)
+
+    for result in results:
+        user = User(result["first_name"], result["last_name"], result["id"])
+        users.append(user)
+    return users
+
 
 def select_all():
     users = []
@@ -63,3 +83,5 @@ def cities(user):
         city = City(result['name'], result['country'], result['id'])
         cities.append(city)
     return cities
+
+
