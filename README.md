@@ -55,15 +55,15 @@ The application allows users to view countries / cities / sights, add and update
 ![Alt text](PDA/pseudo_code.png?raw=true "Optional Title")
 
 ## Site Screenshots
-Solarized dark             |  Solarized Ocean
+Homepage             |  Country List
 :-------------------------:|:-------------------------:
 ![Alt text](PDA/site_snaps/homepage.png?raw=true "Optional Title") | ![Alt text](PDA/site_snaps/country_list.png?raw=true "Optional Title")
-
-![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title")
-
-![Alt text](PDA/site_snaps/visits.png?raw=true "Optional Title")
-
-![Alt text](PDA/site_snaps/add_visit.png?raw=true "Optional Title")
+Add Country            |  Bucket List
+:-------------------------:|:-------------------------:
+![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title") | ![Alt text](PDA/site_snaps/visits.png?raw=true "Optional Title")
+Add to Bucket List            |  
+:-------------------------:|:-------------------------:
+![Alt text](PDA/site_snaps/add_visit.png?raw=true "Optional Title") | Empty
 
 ## TO ADD
 
