@@ -6,13 +6,15 @@
 
 Requires Flask
 
-In root terminal:
+In Terminal:
 
-createdb bucket_list
+```Shell
+$ createdb bucket_list
 
-psql - d bucket_list -f db/bucket_list.sql
+$ psql - d bucket_list -f db/bucket_list.sql
 
-flask run
+$ flask run
+```
 
 ## Languages
 
