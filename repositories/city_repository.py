@@ -76,7 +76,17 @@ def update(city):
 
 def sights(city):
     sights = []
-    sql = "SELECT sights.name, sights.id FROM sights INNER JOIN cities ON cities.id = sights.city_id WHERE cities.id = %s"
+    sql = "SELECT sights.name, sights.id FROM sights INNER JOIN cities ON cities.id = sights.city_id WHERE cities.id = %s ORDER BY sights.name"
+    values = [city.id]
+    results = run_sql(sql, values)
+
+    for result in results:
+        sights.append(result)
+    return sights
+
+def filter_sights_by_name_down(city):
+    sights = []
+    sql = "SELECT sights.name, sights.id FROM sights INNER JOIN cities ON cities.id = sights.city_id WHERE cities.id = %s ORDER BY sights.name DESC"
     values = [city.id]
     results = run_sql(sql, values)
 

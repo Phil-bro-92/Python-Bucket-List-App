@@ -65,5 +65,4 @@ The application allows users to view countries / cities / sights, add and update
 
 ## TO ADD
 
-1.  Activity Diagram
-2.  Implementations Constraint Plan
+1.  Implementations Constraint Plan

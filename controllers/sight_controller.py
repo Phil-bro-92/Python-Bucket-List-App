@@ -13,6 +13,11 @@ def sights(id):
     sights = city_repository.sights(city)
     return render_template("sights/index.html", city=city, sights=sights)
 
+@sights_blueprint.route("/sights/<id>/filter_by_sight_down")
+def filter_by_sight_down(id):
+    city = city_repository.select(id)
+    sights = city_repository.filter_sights_by_name_down(city)
+    return render_template("sights/index.html", city=city, sights=sights)
 
 @sights_blueprint.route("/sights/<id>/new")
 def new_sight(id):
