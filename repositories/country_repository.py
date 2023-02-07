@@ -115,7 +115,7 @@ def update(country):
 
 def cities(country):
     cities = []
-    sql = "SELECT cities.name, cities.id FROM countries INNER JOIN cities ON countries.id = cities.country_id WHERE countries.id = %s"
+    sql = "SELECT cities.name, cities.id FROM countries INNER JOIN cities ON countries.id = cities.country_id WHERE countries.id = %s ORDER BY cities.name"
     values = [country.id]
     results = run_sql(sql, values)
 
@@ -123,3 +123,13 @@ def cities(country):
         cities.append(result)
     return cities
     
+
+def filter_cities_by_name_down(country):
+    cities = []
+    sql = "SELECT cities.name, cities.id FROM countries INNER JOIN cities ON countries.id = cities.country_id WHERE countries.id = %s ORDER BY cities.name DESC"
+    values = [country.id]
+    results = run_sql(sql, values)
+
+    for result in results:
+        cities.append(result)
+    return cities

@@ -39,8 +39,8 @@ def new_user():
 
 @users_blueprint.route("/users", methods=["POST"])
 def create_user():
-    first_name = request.form["first_name"]
-    last_name = request.form["last_name"]
+    first_name = request.form["first_name"].title()
+    last_name = request.form["last_name"].title()
     user = User(first_name, last_name)
     user_repository.save(user)
     return redirect("/users")
@@ -54,8 +54,8 @@ def edit_user(id):
 
 @users_blueprint.route("/users/<id>/update", methods=["POST"])
 def update_user(id):
-    first_name = request.form["update_first_name"]
-    last_name = request.form["update_last_name"]
+    first_name = request.form["update_first_name"].title()
+    last_name = request.form["update_last_name"].title()
     updated_user = User(first_name, last_name)
     updated_user.id = id
     user_repository.update(updated_user)

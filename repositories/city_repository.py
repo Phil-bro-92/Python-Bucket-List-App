@@ -32,6 +32,17 @@ def select_all():
         cities.append(city)
     return cities
 
+def filter_city_name_down():
+    cities = []
+    sql = "SELECT * FROM cities ORDER BY name DESC"
+    results = run_sql(sql)
+
+    for result in results:
+        country = country_repository.select(result["country_id"])
+        city = City(result["name"], country, result["id"])
+        cities.append(city)
+    return cities
+
 
 def select(id):
     city = None

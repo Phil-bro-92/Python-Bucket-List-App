@@ -23,7 +23,7 @@ def new_sight(id):
 @sights_blueprint.route("/sights/<id>", methods=["POST"])
 def create_sight(id):
     city = city_repository.select(id)
-    name = request.form["sight"]
+    name = request.form["sight"].title()
     sight = Sight(name, city)
     sight_repository.save(sight)
     return redirect("/sights/" + id)
@@ -44,7 +44,7 @@ def edit_sight(city_id, sight_id):
 
 @sights_blueprint.route("/sights/<city_id>/<sight_id>/update", methods=["POST"])
 def update_sight(city_id, sight_id):
-    sight = request.form["update_sight"]
+    sight = request.form["update_sight"].title()
     city = city_repository.select(city_id)
     updated_sight = Sight(sight, city, sight_id)
     sight_repository.update(updated_sight)
