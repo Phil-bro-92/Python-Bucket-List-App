@@ -195,9 +195,13 @@ div {
   width: 60px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 650px) {
   .hide-population {
     display: none;
+
+  }
+  th {
+    font-size: 14px;
   }
 }
 
@@ -213,7 +217,7 @@ div {
 }
 
 .fa-angle-up, .fa-angle-down {
-  background-color: #a2cbbc;
+  background-color: #7cb7a2;
   padding: 2px 3px;
   border-radius: 3px;
 }

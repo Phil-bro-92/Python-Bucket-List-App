@@ -10,10 +10,20 @@ def countries():
     countries = country_repository.select_all()
     return render_template("countries/index.html", countries=countries)
 
+@countries_blueprint.route("/countries/filter_by_city_down")
+def filter_by_city_down():
+    countries = country_repository.filter_by_city_down()
+    return render_template("countries/index.html", countries=countries)
+
 
 @countries_blueprint.route("/countries/filter_by_continent")
 def filter_by_continent():
     countries = country_repository.filter_by_continent()
+    return render_template("countries/index.html", countries=countries)
+
+@countries_blueprint.route("/countries/filter_by_continent_down")
+def filter_by_continent_down():
+    countries = country_repository.filter_by_continent_down()
     return render_template("countries/index.html", countries=countries)
 
 @countries_blueprint.route("/countries/filter_by_population")

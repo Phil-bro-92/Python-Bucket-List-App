@@ -27,7 +27,7 @@ def select_all():
     results = run_sql(sql)
 
     for result in results:
-        country = country_repository.select(result['country_id'])
+        country = country_repository.select(result["country_id"])
         city = City(result["name"], country, result["id"])
         cities.append(city)
     return cities
@@ -38,14 +38,12 @@ def select(id):
     sql = "SELECT * FROM cities WHERE id = %s"
     values = [id]
     result = run_sql(sql, values)[0]
-    # pdb.set_trace()
     if result:
-       
-        country = country_repository.select(result['country_id'])
-        
+
+        country = country_repository.select(result["country_id"])
+
         city = City(result["name"], country, result["id"])
     return city
-    
 
 
 def delete_all():
@@ -64,6 +62,7 @@ def update(city):
     values = [city.name, city.country.id, city.id]
     run_sql(sql, values)
 
+
 def sights(city):
     sights = []
     sql = "SELECT sights.name, sights.id FROM sights INNER JOIN cities ON cities.id = sights.city_id WHERE cities.id = %s"
@@ -73,4 +72,3 @@ def sights(city):
     for result in results:
         sights.append(result)
     return sights
-    

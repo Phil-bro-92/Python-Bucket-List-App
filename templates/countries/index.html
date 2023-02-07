@@ -1,13 +1,40 @@
-{% extends "base.html" %}
-{% block content %}
-<form action="/countries/new"><button type="submit" class="add-btn"><i class="fa-solid fa-plus fa-lg"></i></button></form>
+{% extends "base.html" %} {% block content %}
+<form action="/countries/new">
+  <button type="submit" class="add-btn">
+    <i class="fa-solid fa-plus fa-lg"></i>
+  </button>
+</form>
 {%if countries|length > 0 %}
 <table>
   <thead>
     <tr>
-      <th onclick="window.location='/countries'">Country&nbsp;&nbsp;<i onclick="window.location='/countries/filter_by_population'" class="fa-solid fa-angle-up"></i>&nbsp;<i onclick="window.location='/countries/filter_by_population_down'" class="fa-solid fa-angle-down"></i></th>
-      <th onclick="window.location='/countries/filter_by_continent'">Continent&nbsp;&nbsp;<i onclick="window.location='/countries/filter_by_population'" class="fa-solid fa-angle-up"></i>&nbsp;<i onclick="window.location='/countries/filter_by_population_down'" class="fa-solid fa-angle-down"></i></th>
-      <th class="hide-population">Population&nbsp;&nbsp;<i onclick="window.location='/countries/filter_by_population'" class="fa-solid fa-angle-up"></i>&nbsp;<i onclick="window.location='/countries/filter_by_population_down'" class="fa-solid fa-angle-down"></i></th>
+      <th>
+        Country&nbsp;&nbsp;<i
+          onclick="window.location='/countries'"
+          class="fa-solid fa-angle-up"
+        ></i
+        >&nbsp;<i class="fa-solid fa-angle-down" onclick="window.location='/countries/filter_by_city_down'"></i>
+      </th>
+      <th>
+        Continent&nbsp;&nbsp;<i
+          onclick="window.location='/countries/filter_by_continent'"
+          class="fa-solid fa-angle-up"
+        ></i
+        >&nbsp;<i
+          onclick="window.location='/countries/filter_by_continent_down'"
+          class="fa-solid fa-angle-down"
+        ></i>
+      </th>
+      <th class="hide-population">
+        Population&nbsp;&nbsp;<i
+          onclick="window.location='/countries/filter_by_population'"
+          class="fa-solid fa-angle-up"
+        ></i
+        >&nbsp;<i
+          onclick="window.location='/countries/filter_by_population_down'"
+          class="fa-solid fa-angle-down"
+        ></i>
+      </th>
       <th class="cell-btn">Edit</th>
       <th class="cell-btn">Delete</th>
     </tr>
@@ -19,13 +46,17 @@
       <td>{{country.continent}}</td>
       <td class="hide-population">{{"{:,}".format(country.population)}}</td>
       <td class="cell-btn">
-        <form action="/countries/{{country.id}}/edit" method="post"
-          ><button type="submit" class="edit-btn"><i class="fa-solid fa-pen-to-square fa-lg"></i></button
-        ></form>
+        <form action="/countries/{{country.id}}/edit" method="post">
+          <button type="submit" class="edit-btn">
+            <i class="fa-solid fa-pen-to-square fa-lg"></i>
+          </button>
+        </form>
       </td>
       <td class="cell-btn">
         <form action="/countries/{{country.id}}/delete" method="post">
-          <button type="submit" class="delete-btn"><i class="fa-solid fa-trash fa-lg"></i></button>
+          <button type="submit" class="delete-btn">
+            <i class="fa-solid fa-trash fa-lg"></i>
+          </button>
         </form>
       </td>
     </tr>
@@ -36,5 +67,4 @@
 <div class="no-entries">
   <h2>No country entries.</h2>
 </div>
-{% endif %}
-{% endblock %}
+{% endif %} {% endblock %}
