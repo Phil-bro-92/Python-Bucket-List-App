@@ -46,6 +46,10 @@ The application allows users to view countries / cities / sights, add and update
 
 ![Alt text](PDA/use_case.png?raw=true "Optional Title")
 
+## Activity Diagram
+
+![Alt text](PDA/activity_diagram.png?raw=true "Optional Title")
+
 ## Pseudo code example
 
 ![Alt text](PDA/pseudo_code.png?raw=true "Optional Title")
@@ -60,7 +64,7 @@ The application allows users to view countries / cities / sights, add and update
 
 ![Alt text](PDA/site_snaps/visits.png?raw=true "Optional Title")
 
-![Alt text](PDA/site_snaps/add_visits.png?raw=true "Optional Title")
+![Alt text](PDA/site_snaps/add_visit.png?raw=true "Optional Title")
 
 ## TO ADD
 
