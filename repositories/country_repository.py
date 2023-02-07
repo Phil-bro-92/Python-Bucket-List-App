@@ -36,7 +36,7 @@ def filter_by_city_down():
 
 def filter_by_continent():
     countries = []
-    sql = "SELECT * FROM countries ORDER BY continent"
+    sql = "SELECT * FROM countries ORDER BY continent, name"
     results = run_sql(sql)
 
     for result in results:
@@ -48,7 +48,7 @@ def filter_by_continent():
 
 def filter_by_continent_down():
     countries = []
-    sql = "SELECT * FROM countries ORDER BY continent DESC"
+    sql = "SELECT * FROM countries ORDER BY continent DESC, name"
     results = run_sql(sql)
 
     for result in results:
