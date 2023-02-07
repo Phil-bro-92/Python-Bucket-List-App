@@ -22,6 +22,42 @@ def select_all():
         countries.append(country)
     return countries
 
+def filter_by_continent():
+    countries = []
+    sql = "SELECT * FROM countries ORDER BY continent"
+    results = run_sql(sql)
+
+    for result in results:
+        country = Country(
+            result["name"], result["continent"], result["population"], result["id"]
+        )
+        countries.append(country)
+    return countries
+
+def filter_by_population():
+    countries = []
+    sql = "SELECT * FROM countries ORDER BY population DESC"
+    results = run_sql(sql)
+
+    for result in results:
+        country = Country(
+            result["name"], result["continent"], result["population"], result["id"]
+        )
+        countries.append(country)
+    return countries
+
+def filter_by_population_down():
+    countries = []
+    sql = "SELECT * FROM countries ORDER BY population ASC"
+    results = run_sql(sql)
+
+    for result in results:
+        country = Country(
+            result["name"], result["continent"], result["population"], result["id"]
+        )
+        countries.append(country)
+    return countries
+
 
 def select(id):
     country = None

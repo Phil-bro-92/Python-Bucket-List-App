@@ -191,7 +191,7 @@ div {
   width: 60px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .hide-population {
     display: none;
   }
@@ -206,4 +206,14 @@ div {
   .nav > form > button {
     width: 470px;
   }
+}
+
+.fa-angle-up, .fa-angle-down {
+  background-color: #a2cbbc;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+
+.fa-angle-up:hover, .fa-angle-down:hover {
+  background-color: rgb(125, 169, 140);
 }

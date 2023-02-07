@@ -16,11 +16,6 @@ def users_first_name():
     users = user_repository.filter_by_first_name()
     return render_template("users/index.html", users=users)
 
-@users_blueprint.route("/users/filter_by_last_name")
-def users_last_name():
-    users = user_repository.filter_by_last_name()
-    return render_template("users/index.html", users=users)
-
 
 @users_blueprint.route("/users/<id>/delete", methods=["POST"])
 def delete(id):

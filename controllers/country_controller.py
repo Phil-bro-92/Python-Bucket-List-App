@@ -11,6 +11,22 @@ def countries():
     return render_template("countries/index.html", countries=countries)
 
 
+@countries_blueprint.route("/countries/filter_by_continent")
+def filter_by_continent():
+    countries = country_repository.filter_by_continent()
+    return render_template("countries/index.html", countries=countries)
+
+@countries_blueprint.route("/countries/filter_by_population")
+def filter_by_population():
+    countries = country_repository.filter_by_population()
+    return render_template("countries/index.html", countries=countries)
+
+@countries_blueprint.route("/countries/filter_by_population_down")
+def filter_by_population_down():
+    countries = country_repository.filter_by_population_down()
+    return render_template("countries/index.html", countries=countries)
+
+
 @countries_blueprint.route("/countries/<id>/delete", methods=["POST"])
 def delete(id):
     country_repository.delete(id)
