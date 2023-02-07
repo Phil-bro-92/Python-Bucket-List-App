@@ -55,7 +55,8 @@ The application allows users to view countries / cities / sights, add and update
 ![Alt text](PDA/pseudo_code.png?raw=true "Optional Title")
 
 ## Site Screenshots
-
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
 ![Alt text](PDA/site_snaps/homepage.png?raw=true "Optional Title") | ![Alt text](PDA/site_snaps/country_list.png?raw=true "Optional Title")
 
 ![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title")
