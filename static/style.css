@@ -113,6 +113,10 @@ form > h2 {
   text-align: center;
 }
 
+label {
+  line-height: 30px;
+}
+
 input,
 select {
   width: 100%;

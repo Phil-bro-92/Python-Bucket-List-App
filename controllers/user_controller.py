@@ -16,12 +16,21 @@ def users_first_name():
     users = user_repository.filter_by_first_name()
     return render_template("users/index.html", users=users)
 
+@users_blueprint.route("/users/filter_by_first_name_down")
+def users_first_name_down():
+    users = user_repository.filter_by_first_name_down()
+    return render_template("users/index.html", users=users)
+
+@users_blueprint.route("/users/filter_by_last_name_down")
+def users_last_name_down():
+    users = user_repository.filter_by_last_name_down()
+    return render_template("users/index.html", users=users)
+
 
 @users_blueprint.route("/users/<id>/delete", methods=["POST"])
 def delete(id):
     user_repository.delete(id)
     return redirect("/users")
-
 
 @users_blueprint.route("/users/new")
 def new_user():

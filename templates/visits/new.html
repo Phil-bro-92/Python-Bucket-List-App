@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 
 <form action="/visits/{{user.id}}/new" method="post">
-  <h2>Add a destination, {{user.first_name}}</h2>
+  <h2>Add a destination, {{user.first_name}}!</h2>
   <div>
     <label for="user">User:</label>
     <select name="user" id="user_visit">
