@@ -61,6 +61,6 @@ The application allows users to view countries / cities / sights, add and update
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 |  ![Alt text](PDA/site_snaps/homepage.png?raw=true "Optional Title")   | ![Alt text](PDA/site_snaps/country_list.png?raw=true "Optional Title") |
 |                              Add Country                              |                              Update Country                            |
-| ![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title") | ![Alt text](PDA/site_snaps/update_country.png?raw=true                 | 
+| ![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title") | ![Alt text](PDA/site_snaps/update_country.png?raw=true )                | 
 |                     Bucket List                                       |                         Add to Bucket                                  |
 |   ![Alt text](PDA/site_snaps/visits.png?raw=true "Optional Title")    |    ![Alt text](PDA/site_snaps/add_visit.png?raw=true "Optional Title") |
