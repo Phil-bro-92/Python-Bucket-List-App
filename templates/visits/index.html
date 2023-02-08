@@ -6,9 +6,8 @@
 </form>
 
 {% if visits|length > 0 %}
-<h2 class="bucket-list-header">
-  {{user.first_name}} {{user.last_name}}'s Bucket List
-</h2>
+<h2 class="bucket-list-header">{{user.first_name}} {{user.last_name}}'s</h2>
+<div id="bucket-div"><img id="bucket-img" src="../static/bucket.jpg" alt="" /></div>
 <table>
   <thead>
     <tr>

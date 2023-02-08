@@ -226,3 +226,16 @@ div {
 .fa-angle-up:hover, .fa-angle-down:hover {
   background-color: rgb(125, 169, 140);
 }
+
+#bucket-div {
+  margin-top: -35px;
+  margin-bottom: -10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#bucket-img {
+  border-radius: 5px;
+  height: 100px;
+}
