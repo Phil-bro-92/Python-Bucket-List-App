@@ -146,9 +146,9 @@ button:hover {
 }
 .add-btn {
   position: absolute;
+  top: 3px;
   color: white;
   background-color: rgb(79, 147, 214);
-  top: 3px;
   width: 55px;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
