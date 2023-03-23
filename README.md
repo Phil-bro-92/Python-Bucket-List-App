@@ -1,4 +1,4 @@
-# AWAY YE GO
+![Alt text](PDA/site_snaps/logo.png?raw=true "Optional Title")
 
 ## A BUCKET LIST TRAVEL APPLICATION
 
@@ -60,7 +60,7 @@ The application allows users to view countries / cities / sights, add and update
 |                               Homepage                                |                              Country List                              |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 |  ![Alt text](PDA/site_snaps/homepage.png?raw=true "Optional Title")   | ![Alt text](PDA/site_snaps/country_list.png?raw=true "Optional Title") |
-|                              Add Country                              |                              Update Country                            |
-| ![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title") | ![Alt text](PDA/site_snaps/update_country.png?raw=true )                | 
-|                     Bucket List                                       |                         Add to Bucket                                  |
-|   ![Alt text](PDA/site_snaps/visits.png?raw=true "Optional Title")    |    ![Alt text](PDA/site_snaps/add_visit.png?raw=true "Optional Title") |
+|                              Add Country                              |                             Update Country                             |
+| ![Alt text](PDA/site_snaps/add_country.png?raw=true "Optional Title") |        ![Alt text](PDA/site_snaps/update_country.png?raw=true)         |
+|                              Bucket List                              |                             Add to Bucket                              |
+|   ![Alt text](PDA/site_snaps/visits.png?raw=true "Optional Title")    |  ![Alt text](PDA/site_snaps/add_visit.png?raw=true "Optional Title")   |
